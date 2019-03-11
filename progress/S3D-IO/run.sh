@@ -3,7 +3,7 @@
 # remove data files
 
 # declare arrays 
-nodes=(1 2 4 8 16)
+nodes=(8 )
 # prefix of all jobs for this question
 jobPrefix="q1"
 
@@ -15,21 +15,20 @@ jobPrefix="q1"
     echo ${jobName}
 
     # run the job
-    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=1 run.sh)
+    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=1 qsub.sh)
 
     # extract id of job
     id=$( echo $output  | cut -d '.' -f 1)
     outfile=${jobName}.o${id}
-    echo "Waiting for formation of file"
-    
-    # wait for the job to be executed and file to be created
     while [ ! -f "$outfile" ]
-    do
-      continue
+    do 
+	continue
     done
 
     # append data to data file for plots
-    echo "${outfile} finished"
-    echo ${cat $outfile}
+    echo "${outfile} finished" 
+    out=$(cat $outfile)
+    echo "$out"
+    rm "$outfile"
 done
 
