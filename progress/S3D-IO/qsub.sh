@@ -15,7 +15,7 @@ echo $PBS_NODEFILE
 #sort hostnames
 sort $PBS_NODEFILE > hostfile
 #run the job on required number of cores
-mpirun -machinefile hostfile ./s3d_io.x 200 200 200 1 1 1 1 output/
+mpirun -machinefile hostfile  ./s3d_io.x 100 100 100 2 2 2 1 F output/
 
 echo $PBS_JOBID
 echo $PBS_JOBNAME
