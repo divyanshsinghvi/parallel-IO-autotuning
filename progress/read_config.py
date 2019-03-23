@@ -1,10 +1,11 @@
 import json
+import subprocess
 from pprint import pprint
+import os
 
 with open('config.json') as f:
     data = json.load(f)
 
-print(data["mpi"])
 
 mpi_hints=""
 
@@ -15,6 +16,8 @@ for key in data["mpi"]:
 
 print(mpi_hints)
 
+os.chdir('S3D-IO')
+subprocess.Popen(["./run.sh", mpi_hints], shell=False)
 
 for key in data["lfs"]:
     command = key + "  "

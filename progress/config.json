@@ -2,7 +2,7 @@
 {
     "mpi" : {
         "romio_ds_read" : "enable",
-        "romio_ds_write" : "disable"
+        "romio_ds_write" : "enable"
     },
 
     "lfs" : {

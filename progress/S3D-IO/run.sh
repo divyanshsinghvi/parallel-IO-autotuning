@@ -6,7 +6,7 @@
 nodes=(8 )
 # prefix of all jobs for this question
 jobPrefix="q1"
-
+echo $1
  for node in ${nodes[*]}
  do
     echo "No of nodes - ${node}"
@@ -15,11 +15,12 @@ jobPrefix="q1"
     echo ${jobName}
 
     # run the job
-    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=1 qsub.sh)
+    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=1 -v mpihints=$1 qsub.sh)
 
     # extract id of job
     id=$( echo $output  | cut -d '.' -f 1)
     outfile=${jobName}.o${id}
+    echo "Running the job"
     while [ ! -f "$outfile" ]
     do 
 	continue
