@@ -1,2 +1,0 @@
-romio_ds_read : ["enable", "disable"]
-romio_ds_write : ["enable", "disable"]
