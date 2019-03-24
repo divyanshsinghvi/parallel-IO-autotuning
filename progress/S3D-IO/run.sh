@@ -6,6 +6,7 @@
 nodes=(8 )
 # prefix of all jobs for this question
 jobPrefix="q1"
+echo "I am in bash script "
 echo $1
  for node in ${nodes[*]}
  do

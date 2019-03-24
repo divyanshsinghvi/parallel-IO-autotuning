@@ -14,7 +14,6 @@ source /opt/software/intel/initpaths intel64
 echo $PBS_NODEFILE
 #sort hostnames
 sort $PBS_NODEFILE > hostfile
-echo $mpihints
 #run the job on required number of cores
 mpirun -machinefile hostfile -env PNETCDF_HINTS_DISPLAY=1 -env PNETCDF_HINTS=$mpihints  ./s3d_io.x 100 100 100 2 2 2 1 F output/
 

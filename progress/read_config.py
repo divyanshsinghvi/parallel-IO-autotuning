@@ -15,9 +15,8 @@ for key in data["mpi"]:
 
 
 print(mpi_hints)
-
 os.chdir('S3D-IO')
-subprocess.Popen(["./run.sh", mpi_hints], shell=True)
+subprocess.Popen(["./run.sh", mpi_hints], shell=False)
 
 
 
