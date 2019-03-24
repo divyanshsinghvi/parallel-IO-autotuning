@@ -3,7 +3,7 @@ import subprocess
 from pprint import pprint
 import os
 
-with open('config.json') as f:
+with open('confex.json') as f:
     data = json.load(f)
 
 

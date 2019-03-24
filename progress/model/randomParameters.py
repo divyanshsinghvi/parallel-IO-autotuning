@@ -1,10 +1,11 @@
 from modelparser import parse
 from random import randint
 import json
+import os
 
 def generateVectorConfig():
-    data = parse("inputfile")
-    cat = parse("paramcat")
+    data = parse(os.path.join(os.path.dirname(__file__), 'inputfile'))
+    cat = parse(os.path.join(os.path.dirname(__file__), "paramcat"))
     z = []
     b = data["lfs"]["setstripe"]["size"]
     v = randint(0,len(b)-1)
