@@ -2,7 +2,7 @@
 {
     "mpi" : {
         "romio_ds_read" : "enable",
-        "romio_ds_write" : "enable"
+        "romio_ds_write" : "disable"
     },
 
     "lfs" : {
@@ -17,7 +17,7 @@
         ,
         
             "getstripe" : {
-                "filename" : "dir"
+                "filename" : "."
             }
         
     }

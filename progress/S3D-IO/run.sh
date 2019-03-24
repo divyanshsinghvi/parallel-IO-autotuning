@@ -31,5 +31,6 @@ echo $1
     out=$(cat $outfile)
     echo "$out"
     rm "$outfile"
+    rm  output/*
 done
 

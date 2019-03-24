@@ -17,17 +17,22 @@ for key in data["mpi"]:
 print(mpi_hints)
 
 os.chdir('S3D-IO')
-subprocess.Popen(["./run.sh", mpi_hints], shell=False)
+subprocess.Popen(["./run.sh", mpi_hints], shell=True)
+
+
 
 for key in data["lfs"]:
-    command = key + "  "
+    command = "lfs " + key + "  "
     d =  data["lfs"][key]
     if 'filename' in d:
         command += d['filename']
+    else: 
+	command += "."
     if 'size' in d:
         command+= " -s " + d['size']
     if 'count' in d:
         command+= " -c " + d['count']
     print command
+    subprocess.Popen([command], shell=True)
 #pprint(data)
 
