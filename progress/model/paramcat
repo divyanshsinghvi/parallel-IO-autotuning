@@ -1,0 +1,12 @@
+{
+"mpi":{
+        "romio_ds_read" : "cat" ,
+        "romio_ds_write" : "cat"
+},
+"lfs":{
+        "setstripe": {
+            "size": "real",
+            "count": "real"
+        }
+}
+}
