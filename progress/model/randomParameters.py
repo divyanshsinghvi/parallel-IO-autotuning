@@ -3,18 +3,44 @@ from random import randint
 import json
 
 def generateVectorConfig():
-    data = parse()
+    data = parse("inputfile")
+    cat = parse("paramcat")
+    z = []
     b = data["lfs"]["setstripe"]["size"]
-    data["lfs"]["setstripe"]["size"] = b[randint(0,len(b)-1)]
+    v = randint(0,len(b)-1)
+    data["lfs"]["setstripe"]["size"] = b[v]
+
+    if cat["lfs"]["setstripe"]["size"] == 'cat':
+        z.append(v)
+    else: 
+        z.append(b[v])
+
     b = data["lfs"]["setstripe"]["count"]
-    data["lfs"]["setstripe"]["count"] = b[randint(0,len(b)-1)]
+    v = randint(0,len(b)-1)
+    data["lfs"]["setstripe"]["count"] = b[v]
+    
+    if cat["lfs"]["setstripe"]["count"] == 'cat':
+        z.append(v)
+    else: 
+        z.append(b[v])
     b = data["mpi"]["romio_ds_read"]
-    data["mpi"]["romio_ds_read"] = b[randint(0,len(b)-1)]
+    v = randint(0,len(b)-1)
+    data["mpi"]["romio_ds_read"] = b[v]
+    if cat["mpi"]["romio_ds_read"] == 'cat':
+        z.append(v)
+    else: 
+        z.append(b[v])
     b = data["mpi"]["romio_ds_write"]
-    data["mpi"]["romio_ds_write"] = b[randint(0,len(b)-1)]
+    v = randint(0,len(b)-1)
+    data["mpi"]["romio_ds_write"] = b[v]
+    if cat["mpi"]["romio_ds_write"] == 'cat':
+        z.append(v)
+    else: 
+        z.append(b[v])
     with open("confex.json","w") as fp:
         json.dump(data,fp)
     print(data)
+    print z
 
 if __name__ == "__main__":
     generateVectorConfig()

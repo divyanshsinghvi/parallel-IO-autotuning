@@ -2,13 +2,13 @@ import pandas as pd
 import json 
 import os
 
-def parse():
-    with open('inputfile') as json_data:
+def parse(filename):
+    with open(filename) as json_data:
         data = json.load(json_data)
     return data
 
 if __name__ == "__main__":
-    print(parse())
+    print(parse("inputfile"))
 
 #pd.DataFrame.from_dict(data).T
 
