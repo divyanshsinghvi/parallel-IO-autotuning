@@ -3,7 +3,7 @@
 # remove data files
 
 # declare arrays 
-nodes=(8 )
+nodes=(2 )
 # prefix of all jobs for this question
 jobPrefix="q1"
 echo "I am in bash script "
@@ -14,9 +14,11 @@ echo $1
     # assign name of job
     jobName="${jobPrefix}_${node}"
     echo ${jobName}
-
+    
+    export mpihints=$1
+    export commnd="100 100 200 2 2 4 1"
     # run the job
-    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=1 -v mpihints=$1 qsub.sh)
+    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=8 -v mpihints -v commnd qsub.sh)
 
     # extract id of job
     id=$( echo $output  | cut -d '.' -f 1)
