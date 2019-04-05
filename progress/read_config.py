@@ -19,7 +19,7 @@ for key in data["lfs"]:
     if 'filename' in d:
         command += d['filename']
     else: 
-	command += "."
+        command += "."
     if 'size' in d:
         command+= " -s " + d['size']
     if 'count' in d:
@@ -40,9 +40,12 @@ logging.debug("MPI parameters:" + mpi_hints)
 log = open('../stats.txt','a')
 out=subprocess.Popen(["./run.sh", mpi_hints], shell=False, stdout=subprocess.PIPE)
 output=out.stdout.read()
-#logging.debug(output)
-readB=re.findall("read  bandwidth\s*:\s*([0-9]+\.[0-9]+)",output)
+logging.debug(output.decode('utf-8'))
+readB=re.findall("read  bandwidth\s*:\s*([0-9]+\.[0-9]+)",output.decode('utf-8'))
 	#print(readB)
-writeB=re.findall("write bandwidth\s*:\s*([0-9]+\.[0-9]+)",output)
-print("{0} {1}".format(readB[0], writeB[0]))
+writeB=re.findall("write bandwidth\s*:\s*([0-9]+\.[0-9]+)",output.decode('utf-8'))
+print("{0} {1} ".format(readB[0], writeB[0]), end = "")
 
+hints_array=mpi_hints.split(";")
+for hints in hints_array:
+    print(hints.split("="),end=" ")
