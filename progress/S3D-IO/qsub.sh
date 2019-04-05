@@ -15,7 +15,7 @@ echo $PBS_NODEFILE
 #sort hostnames
 sort $PBS_NODEFILE > hostfile
 #run the job on required number of cores
-mpirun -machinefile hostfile -env PNETCDF_HINTS=$mpihints ./s3d_io.x $commnd F output/
+mpirun -machinefile hostfile -env PNETCDF_HINTS=$mpihints ./s3d_io.x $commnd T output/
 
 echo $PBS_JOBID
 echo $PBS_JOBNAME
