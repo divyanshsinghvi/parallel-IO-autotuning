@@ -10,6 +10,7 @@
           use topology_m,     only: gcomm
           use runtime_m,      only: i_time, i_time_end, tstep, time
           use runtime_m,      only: time_save, time_save_inc, time_ref
+          use runtime_m,      only: restart
           use io_profiling_m, only: set_io_hints, print_io_performance
           implicit none
 
@@ -49,6 +50,13 @@
                  time_save=time_save+time_save_inc
              endif
           enddo
+
+         ! Restart code from previous data files.             
+         !if (restart)  then
+         ! call MPI_Barrier(gcomm,err)
+         ! call read_savefile
+         !endif
+
 
           ! deallocate MPI info object
           call set_io_hints(-1)
