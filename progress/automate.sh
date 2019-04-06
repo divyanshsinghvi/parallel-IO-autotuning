@@ -1,4 +1,4 @@
 #!/bin/bash
 
-python model/randomParameters.py 
-python read_config.py
+python3 model/randomParameters.py 
+python3 read_config.py

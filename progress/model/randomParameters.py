@@ -41,7 +41,7 @@ def generateVectorConfig():
     with open("confex.json","w") as fp:
         json.dump(data,fp)
     print(data)
-    print z
+    print(z)
 
 if __name__ == "__main__":
     generateVectorConfig()

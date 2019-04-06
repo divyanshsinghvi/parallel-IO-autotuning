@@ -16,7 +16,7 @@ echo $1
     echo ${jobName}
     
     export mpihints=$1
-    export commnd="50 50 200 2 2 4 1"
+    export commnd=$2
     # run the job
     output=$(qsub -N ${jobName} -l nodes=${node}:ppn=8 -v mpihints -v commnd qsub.sh)
 
