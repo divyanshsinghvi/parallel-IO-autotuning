@@ -47,15 +47,17 @@ readB=re.findall("read  bandwidth\s*:\s*([0-9]+\.[0-9]+)",output.decode('utf-8')
 	#print(readB)
 writeB=re.findall("write bandwidth\s*:\s*([0-9]+\.[0-9]+)",output.decode('utf-8'))
 print("S3D-IO",end = " ")
-print(specific_commands, end = " ")
+print(re.sub(r"\s","-",specific_commands), end = " ")
+
+    
+print("{0} {1} ".format(readB[0], writeB[0]), end = "")
 
 for hints in data["lfs"]["setstripe"]:
         print(data["lfs"]["setstripe"][hints],end=" ")
-    
-print("{0} {1} ".format(readB[0], writeB[0]), end = "")
 
 hints_array=mpi_hints.split(";")
 for hints in hints_array:
     if(len(hints.split('=')) == 2): 
         print(hints.split("=")[1],end=" ")
 
+print()
