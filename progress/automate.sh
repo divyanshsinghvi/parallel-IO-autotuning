@@ -1,6 +1,6 @@
 #!/bin/bash
-
-for i in `seq 1 11`
+#rm S3D-IO/output/*
+for i in `seq 1 41`
 do
 	python3 model/randomParameters.py 
 	python3 read_config.py
