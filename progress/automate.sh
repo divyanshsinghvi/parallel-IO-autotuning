@@ -1,4 +1,7 @@
 #!/bin/bash
 
-python3 model/randomParameters.py 
-python3 read_config.py
+for i in `seq 1 11`
+do
+	python3 model/randomParameters.py 
+	python3 read_config.py
+done
