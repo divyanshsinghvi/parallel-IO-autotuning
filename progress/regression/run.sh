@@ -8,3 +8,4 @@ source env/bin/activate
 pip install numpy
 pip install scipy
 pip install -U scikit-learn
+pip install pandas
