@@ -21,7 +21,7 @@ echo $1
     output=$(qsub -N ${jobName} -l nodes=${node}:ppn=8 -v mpihints -v commnd qsub.sh)
 
     # extract id of job
-    id=$( echo $output  | cut -d '.' -f 1)
+    id=$( echo $output  | awk -F. '{print $1}')
     outfile=${jobName}.o${id}
     echo "Running the job"
     while [ ! -f "$outfile" ]

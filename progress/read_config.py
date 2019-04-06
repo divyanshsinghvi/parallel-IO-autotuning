@@ -15,6 +15,8 @@ with open('confex.json') as f:
 
 
 os.chdir('./S3D-IO')
+#out=subprocess.Popen(["lfs", "getstripe","-d", "."], shell=False, stdout=subprocess.PIPE) 
+
 for key in data["lfs"]:
     command = "lfs " + key + "  "
     d =  data["lfs"][key]
@@ -31,7 +33,6 @@ for key in data["lfs"]:
     os.chdir('./output')
     subprocess.Popen(shlex.split(str(command)), shell=False)
 
-out=subprocess.Popen(["lfs", "getstripe","-d", "."], shell=False, stdout=subprocess.PIPE)
 mpi_hints=""
 os.chdir('../')
 for key in data["mpi"]:
@@ -40,7 +41,7 @@ for key in data["mpi"]:
 
 
 logging.debug("MPI parameters:" + mpi_hints)
-specific_commands="50 50 100 2 2 4 1"
+specific_commands="100 100 200 2 2 4 1"
 logging.debug("S3D-IO :" + specific_commands)
 log = open('../stats.txt','a')
 out=subprocess.Popen(["./run.sh", mpi_hints,specific_commands], shell=False, stdout=subprocess.PIPE)
