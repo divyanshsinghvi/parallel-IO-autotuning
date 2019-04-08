@@ -25,7 +25,7 @@ for key in data["lfs"]:
     else: 
         command += "."
     if 'size' in d:
-        command+= " -s " + d['size']
+        command+= " -s " + str(d['size'])
     if 'count' in d:
         command+= " -c " + str(d['count'])
     #print(str(command))
@@ -41,7 +41,7 @@ for key in data["mpi"]:
 
 
 logging.debug("MPI parameters:" + mpi_hints)
-specific_commands="200 400 400 4 4 4 1"
+specific_commands="50 50 100 2 2 4 1"
 logging.debug("S3D-IO :" + specific_commands)
 log = open('../stats.txt','a')
 out=subprocess.Popen(["./run.sh", mpi_hints,specific_commands], shell=False, stdout=subprocess.PIPE)
@@ -81,4 +81,4 @@ for hints in hints_array:
         print(hints.split("=")[1],end=" ",file=log)
 
 print()
-print(file=log)
+#print(file=log)
