@@ -3,7 +3,7 @@
 # remove data files
 
 # declare arrays 
-nodes=(8 )
+nodes=(2 )
 # prefix of all jobs for this question
 jobPrefix="q1"
 echo "I am in bash script "

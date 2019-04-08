@@ -24,3 +24,12 @@ TASK : Forms a config file by chosing randomparameters from inputfile
 
 model/paramcat
 TASK: Stores the category of the parameters, real valued or categorical
+
+
+CHALLENGES FACED:
+
+Installing python3 with tk 
+
+FIXES TO BE DONE
+
+in runthebenchmark function in active learning path is        hardcoded -- change that later
