@@ -81,4 +81,4 @@ for hints in hints_array:
         print(hints.split("=")[1],end=" ",file=log)
 
 print()
-#print(file=log)
+print(file=log)

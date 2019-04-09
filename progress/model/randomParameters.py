@@ -38,8 +38,25 @@ def generateVectorConfig():
         z.append(v)
     else: 
         z.append(b[v])
+    
+
+    b = data["mpi"]["romio_cb_read"]
+    v = randint(0,len(b)-1)
+    data["mpi"]["romio_cb_read"] = b[v]
+
+
+    b = data["mpi"]["romio_cb_write"]
+    v = randint(0,len(b)-1)
+    data["mpi"]["romio_cb_write"] = b[v]
+
+    b = data["mpi"]["cb_buffer_size"]
+    v = randint(0,len(b)-1)
+    data["mpi"]["cb_buffer_size"] = str(b[v])
+  
     with open("confex.json","w") as fp:
         json.dump(data,fp)
+
+
     print(data)
     print(z)
 
