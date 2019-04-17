@@ -1,13 +1,10 @@
 #!/bin/bash
 
 # remove data files
-
 # declare arrays 
-nodes=(2 )
+nodes=($1)
 # prefix of all jobs for this question
-jobPrefix="q1"
-echo "I am in bash script "
-echo $1
+jobPrefix="S3D-IO"
  for node in ${nodes[*]}
  do
     echo "No of nodes - ${node}"
@@ -15,10 +12,10 @@ echo $1
     jobName="${jobPrefix}_${node}"
     echo ${jobName}
     
-    export mpihints=$1
-    export commnd=$2
+    export mpihints=$3
+    export commnd=$4
     # run the job
-    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=8 -v mpihints -v commnd qsub.sh)
+    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=$2 -v mpihints -v commnd qsub.sh)
 
     # extract id of job
     id=$( echo $output  | awk -F. '{print $1}')

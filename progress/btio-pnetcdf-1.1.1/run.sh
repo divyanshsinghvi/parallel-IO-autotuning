@@ -3,7 +3,7 @@
 # remove data files
 
 # declare arrays 
-nodes=(2 )
+nodes=($1)
 # prefix of all jobs for this question
 jobPrefix="BTIO"
 echo "I am in bash script "
@@ -15,9 +15,9 @@ echo $1
     jobName="${jobPrefix}_${node}"
     echo ${jobName}
     
-    export mpihints=$1
+    export mpihints=$3
     # run the job
-    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=8 -v mpihints qsub.sh)
+    output=$(qsub -N ${jobName} -l nodes=${node}:ppn=$2 -v mpihints qsub.sh)
 
     # extract id of job
     id=$( echo $output  | awk -F. '{print $1}')
