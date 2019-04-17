@@ -41,7 +41,7 @@ for key in data["mpi"]:
 
 
 logging.debug("MPI parameters:" + mpi_hints)
-specific_commands="50 50 100 2 2 4 1"
+specific_commands="50 100 100 2 2 4 1"
 logging.debug("S3D-IO :" + specific_commands)
 log = open('../stats.txt','a')
 out=subprocess.Popen(["./run.sh", mpi_hints,specific_commands], shell=False, stdout=subprocess.PIPE)
