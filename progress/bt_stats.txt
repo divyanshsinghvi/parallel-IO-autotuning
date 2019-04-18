@@ -1,0 +1,4 @@
+btio-pnetcdf-1.1.1 256-256-256 btio-pnetcdf-1.1.1 256-256-256 btio-pnetcdf-1.1.1 256-256-256 65536 17 enable disable enable disable 384827392 
+btio-pnetcdf-1.1.1 256-256-256 65536 17 enable disable enable disable 384827392 
+btio-pnetcdf-1.1.1 256-256-256 btio-pnetcdf-1.1.1 256-256-256 btio-pnetcdf-1.1.1 256-256-256 btio-pnetcdf-1.1.1 256-256-256 btio-pnetcdf-1.1.1 256-256-256 btio-pnetcdf-1.1.1 256-256-256 btio-pnetcdf-1.1.1 256-256-256 58.56 1920.00 32.79 0 0 65536 17 enable disable enable disable 384827392 
+btio-pnetcdf-1.1.1 256-256-256 103.63 1920.00 18.53 0 0 65536 17 enable disable enable disable 384827392 
