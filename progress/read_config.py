@@ -11,7 +11,7 @@ logging.basicConfig(filename='app.log', filemode='a', format='%(name)s - %(level
 #logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
 with open('confex.json') as f:
-    data = json.load(f)
+   data = json.load(f)
 
 
 os.chdir('./S3D-IO')

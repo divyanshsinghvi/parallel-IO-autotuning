@@ -41,7 +41,7 @@ for opt, arg in opts:
         nodes = arg
     elif opt in ("-p", "--ppn"):
         ppn = arg
-print(benchmark + specific_commands + str(nodes) + str(ppn))
+#print(benchmark + specific_commands + str(nodes) + str(ppn))
 os.chdir(benchmarkFolder)
 #out=subprocess.Popen(["lfs", "getstripe","-d", "."], shell=False, stdout=subprocess.PIPE) 
 
@@ -93,7 +93,6 @@ print(benchmark ,end = " ", file=log)
 print(re.sub(r"\s","-",specific_commands), end = " ")
 print(re.sub(r"\s","-",specific_commands), end = " ", file=log)
 
-    
 print("{0} {1} {2} {3} {4} {5} {6} {7}".format(readB[0],readD[0],readT[0],writeB[0],writeD[0],writeT[0],openT[0],closeT[0]), end = " ")
 print("{0} {1} {2} {3} {4} {5} {6} {7}".format(readB[0],readD[0],readT[0],writeB[0],writeD[0],writeT[0],openT[0],closeT[0]), end = " ",file=log)
 
