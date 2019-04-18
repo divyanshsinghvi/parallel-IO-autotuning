@@ -20,8 +20,8 @@
          time_save = time_save_inc
 
          ! Restart code from previous data files.
-         if (restart)  then
-            call MPI_Barrier(gcomm,err)
-            call read_savefile
-         endif
+         !if (restart)  then
+         !   call MPI_Barrier(gcomm,err)
+         !   call read_savefile
+         !endif
       end subroutine initialize_field

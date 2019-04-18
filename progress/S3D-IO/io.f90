@@ -47,8 +47,9 @@
           write(time_ext,'(1pe10.3)') time*time_ref
 
           ! set file name
-          filename = trim(dir_path)//'/'//trim(run_title)//'.'// &
-                     trim(adjustl(time_ext))//'.field.nc'
+       filename=trim(dir_path)//'/pressure_wave_test.0.000E+00.field.nc'
+                    !//'/'//trim(run_title)//'.'// &
+                    ! trim(adjustl(time_ext))//'.field.nc'
 
           ! inquire about file existence
           inquire(file=trim(filename),exist=exist)

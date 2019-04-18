@@ -25,7 +25,6 @@
           ! initialize field
           ! (allocate variables and read restart file if restart)
           call initialize_field
-
           ! loop over num_writes time steps
           i_time = 0
           time_ref = 1.29889001100892417E-005
@@ -52,10 +51,8 @@
           enddo
 
          ! Restart code from previous data files.             
-         !if (restart)  then
-         ! call MPI_Barrier(gcomm,err)
-         ! call read_savefile
-         !endif
+          call MPI_Barrier(gcomm,err)
+          call read_savefile
 
 
           ! deallocate MPI info object

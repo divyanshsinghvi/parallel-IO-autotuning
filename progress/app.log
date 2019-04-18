@@ -72074,3 +72074,647 @@ S3D-IO_2
 root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 17
 root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=384827392;
 root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - MPI parameters:romio_cb_write=enable
+root - DEBUG - S3D-IO :100 100 200 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108135 finished
+
+
+root - DEBUG - MPI parameters:romio_cb_write=enable
+root - DEBUG - S3D-IO :100 100 200 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108137 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108137.mgmt03
+ restart file does not exist output//pressure_wave_test.3.000E-06.field.nc
+ skip reading restart files
+ ---- MPI file info used ----
+                      cb_buffer_size = 16777216
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     100 x    100 x    200
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.05 sec
+ Time for read       :        0.00 sec
+ Time for write      :        2.61 sec
+ Time for close      :        0.02 sec
+ no. read  calls     :        0    per process
+ no. write calls     :       12    per process
+ total read  amount  :        0.00 GiB
+ total write amount  :        0.72 GiB
+ read  bandwidth     :        0.00 MiB/s
+ write bandwidth     :      280.17 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        0.72 GiB
+ total I/O   time    :        2.68 sec
+ I/O   bandwidth     :      273.30 MiB/s
+108137.mgmt03
+S3D-IO_2
+
+root - DEBUG - MPI parameters:romio_cb_write=enable
+root - DEBUG - S3D-IO :100 100 200 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108139 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108139.mgmt03
+ restart file does not exist output//pressure_wave_test.3.000E-06.field.nc
+ skip reading restart files
+ ---- MPI file info used ----
+                      cb_buffer_size = 16777216
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     100 x    100 x    200
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.03 sec
+ Time for read       :        0.00 sec
+ Time for write      :        2.46 sec
+ Time for close      :        0.02 sec
+ no. read  calls     :        0    per process
+ no. write calls     :       12    per process
+ total read  amount  :        0.00 GiB
+ total write amount  :        0.72 GiB
+ read  bandwidth     :        0.00 MiB/s
+ write bandwidth     :      297.68 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        0.72 GiB
+ total I/O   time    :        2.51 sec
+ I/O   bandwidth     :      292.23 MiB/s
+108139.mgmt03
+S3D-IO_2
+
+root - DEBUG - MPI parameters:romio_cb_write=enable
+root - DEBUG - S3D-IO :100 100 200 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108141 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108141.mgmt03
+ restart file does not exist output//pressure_wave_test.3.000E-06.field.nc
+ skip reading restart files
+ ---- MPI file info used ----
+                      cb_buffer_size = 16777216
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     100 x    100 x    200
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.07 sec
+ Time for read       :        0.00 sec
+ Time for write      :        2.42 sec
+ Time for close      :        0.02 sec
+ no. read  calls     :        0    per process
+ no. write calls     :       12    per process
+ total read  amount  :        0.00 GiB
+ total write amount  :        0.72 GiB
+ read  bandwidth     :        0.00 MiB/s
+ write bandwidth     :      303.13 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        0.72 GiB
+ total I/O   time    :        2.50 sec
+ I/O   bandwidth     :      292.59 MiB/s
+108141.mgmt03
+S3D-IO_2
+
+root - DEBUG - MPI parameters:romio_cb_write=enable
+root - DEBUG - S3D-IO :100 100 200 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108145 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108145.mgmt03
+ restart file does not exist output//pressure_wave_test.3.000E-06.field.nc
+ skip reading restart files
+ ---- MPI file info used ----
+                      cb_buffer_size = 16777216
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     100 x    100 x    200
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.03 sec
+ Time for read       :        0.00 sec
+ Time for write      :        2.06 sec
+ Time for close      :        0.03 sec
+ no. read  calls     :        0    per process
+ no. write calls     :       12    per process
+ total read  amount  :        0.00 GiB
+ total write amount  :        0.72 GiB
+ read  bandwidth     :        0.00 MiB/s
+ write bandwidth     :      355.56 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        0.72 GiB
+ total I/O   time    :        2.11 sec
+ I/O   bandwidth     :      346.79 MiB/s
+108145.mgmt03
+S3D-IO_2
+
+root - DEBUG - MPI parameters:romio_cb_write=enable
+root - DEBUG - S3D-IO :100 100 200 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108147 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108147.mgmt03
+
+s3d_io.x:12966 terminated with signal 11 at PC=2b166ee1e376 SP=7fff173d6160.  Backtrace:
+
+s3d_io.x:12967 terminated with signal 11 at PC=2ac8883c8376 SP=7ffcbe9db0b0.  Backtrace:
+
+s3d_io.x:12968 terminated with signal 11 at PC=2b4e89c50376 SP=7ffd15fa2630.  Backtrace:
+
+s3d_io.x:12969 terminated with signal 11 at PC=2b0bc58b2376 SP=7ffc91e721d0.  Backtrace:
+
+s3d_io.x:12971 terminated with signal 11 at PC=2adac410e376 SP=7ffc4c051ec0.  Backtrace:
+
+s3d_io.x:12972 terminated with signal 11 at PC=2b978c4a2376 SP=7ffd5c2fae30.  Backtrace:
+
+s3d_io.x:12970 terminated with signal 11 at PC=2b0a8682a376 SP=7ffed58cfe50.  Backtrace:
+
+s3d_io.x:12973 terminated with signal 11 at PC=2af867863376 SP=7ffd26627e50.  Backtrace:
+
+s3d_io.x:20354 terminated with signal 11 at PC=2aab487b7376 SP=7ffce7346ce0.  Backtrace:
+
+s3d_io.x:20355 terminated with signal 11 at PC=2b70bfa13376 SP=7ffdbb751c90.  Backtrace:
+
+s3d_io.x:20356 terminated with signal 11 at PC=2ba733961376 SP=7ffec60ff380.  Backtrace:
+
+s3d_io.x:20357 terminated with signal 11 at PC=2b47d8bb1376 SP=7ffca3e4ebc0.  Backtrace:
+
+s3d_io.x:20358 terminated with signal 11 at PC=2b76ca1ba376 SP=7ffe06c4dae0.  Backtrace:
+
+s3d_io.x:20359 terminated with signal 11 at PC=2b9ce4b74376 SP=7ffef824a9d0.  Backtrace:
+
+s3d_io.x:20360 terminated with signal 11 at PC=2b5e2903f376 SP=7ffffd3ab9e0.  Backtrace:
+
+s3d_io.x:20361 terminated with signal 11 at PC=2afa86b0f376 SP=7ffca582cc00.  Backtrace:
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b166ee1e376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b166f7bdb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2ac8883c8376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ac888d67b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b4e89c50376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b4e8a5efb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b0bc58b2376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b0bc6251b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b0a8682a376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b0a871c9b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2adac410e376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2adac4aadb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b978c4a2376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b978ce41b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2af867863376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2af868202b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2aab487b7376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2aab49156b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b70bfa13376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b70c03b2b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2ba733961376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba734300b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b47d8bb1376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b47d9550b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b76ca1ba376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b76cab59b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b9ce4b74376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9ce5513b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b5e2903f376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b5e299deb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2afa86b0f376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afa874aeb15]
+./s3d_io.x[0x402e79]
+108147.mgmt03
+S3D-IO_2
+
+root - DEBUG - MPI parameters:romio_cb_write=enable
+root - DEBUG - S3D-IO :100 100 200 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108148 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108148.mgmt03
+
+s3d_io.x:19039 terminated with signal 11 at PC=2ba53ea95376 SP=7ffd38dad390.  Backtrace:
+
+s3d_io.x:19040 terminated with signal 11 at PC=2afd1d523376 SP=7ffef85fcf70.  Backtrace:
+
+s3d_io.x:19041 terminated with signal 11 at PC=2ac531247376 SP=7ffef50ed7f0.  Backtrace:
+
+s3d_io.x:19042 terminated with signal 11 at PC=2b816e5dc376 SP=7ffcda41cb10.  Backtrace:
+
+s3d_io.x:19043 terminated with signal 11 at PC=2aedb8f5c376 SP=7fff21906f20.  Backtrace:
+
+s3d_io.x:19044 terminated with signal 11 at PC=2b1708265376 SP=7ffd9ea5c420.  Backtrace:
+
+s3d_io.x:19045 terminated with signal 11 at PC=2b485b19c376 SP=7ffc98aed680.  Backtrace:
+
+s3d_io.x:19046 terminated with signal 11 at PC=2b3b318bf376 SP=7fffaf3974e0.  Backtrace:
+
+s3d_io.x:23700 terminated with signal 11 at PC=2aff2967e376 SP=7fff0229a080.  Backtrace:
+
+s3d_io.x:23701 terminated with signal 11 at PC=2b841d7b4376 SP=7ffd6de5cdf0.  Backtrace:
+
+s3d_io.x:23702 terminated with signal 11 at PC=2b3ba64bf376 SP=7fff468da770.  Backtrace:
+
+s3d_io.x:23703 terminated with signal 11 at PC=2ad3365df376 SP=7ffc9aded390.  Backtrace:
+
+s3d_io.x:23706 terminated with signal 11 at PC=2b4ad501e376 SP=7ffc4a17dc10.  Backtrace:
+
+s3d_io.x:23707 terminated with signal 11 at PC=2b3884003376 SP=7ffe856eddb0.  Backtrace:
+
+s3d_io.x:23704 terminated with signal 11 at PC=2b8c5a30b376 SP=7ffed5e69ed0.  Backtrace:
+
+s3d_io.x:23705 terminated with signal 11 at PC=2b00dffc9376 SP=7ffe62684b60.  Backtrace:
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2ba53ea95376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba53f434b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2afd1d523376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afd1dec2b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2ac531247376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ac531be6b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b816e5dc376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b816ef7bb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2aedb8f5c376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2aedb98fbb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b1708265376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b1708c04b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b485b19c376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b485bb3bb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b3b318bf376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b3b3225eb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2aff2967e376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2aff2a01db15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b841d7b4376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b841e153b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b3ba64bf376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b3ba6e5eb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2ad3365df376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ad336f7eb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b8c5a30b376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b8c5acaab15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b00dffc9376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b00e0968b15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b4ad501e376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b4ad59bdb15]
+./s3d_io.x[0x402e79]
+/lib64/libgfortran.so.3(_gfortran_arandom_r8+0x136)[0x2b3884003376]
+./s3d_io.x[0x4089cc]
+./s3d_io.x[0x408ce7]
+./s3d_io.x[0x4098f2]
+./s3d_io.x[0x409945]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b38849a2b15]
+./s3d_io.x[0x402e79]
+108148.mgmt03
+S3D-IO_2
+
+root - DEBUG - MPI parameters:romio_cb_write=enable
+root - DEBUG - S3D-IO :100 100 200 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108153 finished
+
+
