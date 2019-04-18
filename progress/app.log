@@ -79215,3 +79215,4480 @@ Intel(R) Advisor XE 2015 (build 380555)
 108258.mgmt03
 S3D-IO_2
 
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 196608 -c 16
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=418381824;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108304 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108304.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 418381824
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.71 sec
+ Time for write      :       10.92 sec
+ Time for close      :        0.07 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      719.50 MiB/s
+ write bandwidth     :      536.67 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :       10.97 sec
+ I/O   bandwidth     :      712.47 MiB/s
+108304.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 1
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=486539264;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108305 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108305.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 486539264
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        3.32 sec
+ Time for write      :       14.23 sec
+ Time for close      :        0.13 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      588.71 MiB/s
+ write bandwidth     :      411.75 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :       14.28 sec
+ I/O   bandwidth     :      547.03 MiB/s
+108305.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 458752 -c 12
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=500170752;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108306 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108306.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 500170752
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.56 sec
+ Time for write      :        8.80 sec
+ Time for close      :        0.06 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      764.32 MiB/s
+ write bandwidth     :      665.96 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        8.85 sec
+ I/O   bandwidth     :      882.97 MiB/s
+108306.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 6
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=71303168;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108307 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108307.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 71303168
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.05 sec
+ Time for read       :        3.14 sec
+ Time for write      :        8.51 sec
+ Time for close      :        0.07 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      621.51 MiB/s
+ write bandwidth     :      688.14 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        8.58 sec
+ I/O   bandwidth     :      910.96 MiB/s
+108307.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 8
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=308281344;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108308 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108308.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 308281344
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        3.10 sec
+ Time for write      :        8.50 sec
+ Time for close      :        0.09 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      629.49 MiB/s
+ write bandwidth     :      689.14 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        8.55 sec
+ I/O   bandwidth     :      914.22 MiB/s
+108308.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 327680 -c 4
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=45088768;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108309 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108309.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 45088768
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.79 sec
+ Time for write      :        8.48 sec
+ Time for close      :        0.09 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      700.35 MiB/s
+ write bandwidth     :      690.61 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        8.53 sec
+ I/O   bandwidth     :      916.07 MiB/s
+108309.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 19
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=533725184;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108310 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108310.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 533725184
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.69 sec
+ Time for write      :        9.66 sec
+ Time for close      :        0.07 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      726.80 MiB/s
+ write bandwidth     :      606.32 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        9.71 sec
+ I/O   bandwidth     :      804.81 MiB/s
+108310.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 589824 -c 5
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=430964736;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108311 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108311.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 430964736
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.77 sec
+ Time for write      :        7.96 sec
+ Time for close      :        0.06 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      704.35 MiB/s
+ write bandwidth     :      736.31 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        8.00 sec
+ I/O   bandwidth     :      976.66 MiB/s
+108311.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 2
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=489684992;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108312 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108312.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 489684992
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        3.23 sec
+ Time for write      :        7.69 sec
+ Time for close      :        0.12 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      604.16 MiB/s
+ write bandwidth     :      762.43 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        7.73 sec
+ I/O   bandwidth     :     1011.35 MiB/s
+108312.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 17
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=499122176;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108313 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108313.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 499122176
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.81 sec
+ Time for write      :       11.81 sec
+ Time for close      :        0.09 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      693.93 MiB/s
+ write bandwidth     :      496.27 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :       11.86 sec
+ I/O   bandwidth     :      658.78 MiB/s
+108313.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 1048576 -c 2
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=269484032;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108314 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108314.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 269484032
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :       17.39 sec
+ Time for write      :        7.93 sec
+ Time for close      :        0.13 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      112.31 MiB/s
+ write bandwidth     :      738.85 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        7.98 sec
+ I/O   bandwidth     :      979.19 MiB/s
+108314.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 393216 -c 14
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=303038464;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108315 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108315.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 303038464
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.58 sec
+ Time for write      :        9.47 sec
+ Time for close      :        0.05 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      757.55 MiB/s
+ write bandwidth     :      618.66 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        9.51 sec
+ I/O   bandwidth     :      821.10 MiB/s
+108315.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 16
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=160432128;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108316 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108316.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 160432128
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.18 sec
+ Time for read       :        3.53 sec
+ Time for write      :       24.16 sec
+ Time for close      :        0.12 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      553.57 MiB/s
+ write bandwidth     :      242.55 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :       24.21 sec
+ I/O   bandwidth     :      322.73 MiB/s
+108316.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 458752 -c 11
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=233832448;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108317 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108317.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 233832448
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.97 sec
+ Time for write      :        8.78 sec
+ Time for close      :        0.12 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      658.07 MiB/s
+ write bandwidth     :      667.71 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        8.82 sec
+ I/O   bandwidth     :      886.01 MiB/s
+108317.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 16
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=442499072;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108318 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108318.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 442499072
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.05 sec
+ Time for read       :        2.96 sec
+ Time for write      :        9.08 sec
+ Time for close      :        0.05 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      660.18 MiB/s
+ write bandwidth     :      645.48 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        9.12 sec
+ I/O   bandwidth     :      856.54 MiB/s
+108318.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 917504 -c 13
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=521142272;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108319 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108319.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 521142272
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        3.03 sec
+ Time for write      :       35.36 sec
+ Time for close      :        0.09 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      643.78 MiB/s
+ write bandwidth     :      165.70 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :       35.40 sec
+ I/O   bandwidth     :      220.69 MiB/s
+108319.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 196608 -c 3
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=286261248;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 196608 -c 9
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=62914560;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108321 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108321.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 62914560
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.78 sec
+ Time for write      :       11.26 sec
+ Time for close      :        0.05 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      702.84 MiB/s
+ write bandwidth     :      520.44 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :       11.30 sec
+ I/O   bandwidth     :      691.27 MiB/s
+108321.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 196608 -c 8
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=66060288;
+root - DEBUG - S3D-IO :200 200 400 2 2 4 1
+root - DEBUG - No of nodes - 2
+S3D-IO_2
+2, 8
+Running the job
+S3D-IO_2.o108322 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108322.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 66060288
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 2
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      16
+ Global array size   :     200 x    200 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.04 sec
+ Time for read       :        2.85 sec
+ Time for write      :        8.73 sec
+ Time for close      :        0.08 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        1.91 GiB
+ total write amount  :        5.72 GiB
+ read  bandwidth     :      685.45 MiB/s
+ write bandwidth     :      671.28 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :        7.63 GiB
+ total I/O   time    :        8.78 sec
+ I/O   bandwidth     :      889.47 MiB/s
+108322.mgmt03
+S3D-IO_2
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 589824 -c 14
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=355467264;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108326 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108326.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 355467264
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.37 sec
+ Time for read       :        5.33 sec
+ Time for write      :       43.27 sec
+ Time for close      :        1.49 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     2930.21 MiB/s
+ write bandwidth     :     1083.20 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       43.37 sec
+ I/O   bandwidth     :     1441.06 MiB/s
+108326.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 18
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=23068672;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108327 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108327.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 23068672
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.11 sec
+ Time for read       :        8.35 sec
+ Time for write      :      106.63 sec
+ Time for close      :        0.08 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1870.47 MiB/s
+ write bandwidth     :      439.62 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :      106.72 sec
+ I/O   bandwidth     :      585.65 MiB/s
+108327.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 458752 -c 11
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=352321536;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108328 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108328.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 352321536
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.44 sec
+ Time for read       :        8.96 sec
+ Time for write      :       41.97 sec
+ Time for close      :        0.73 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1744.00 MiB/s
+ write bandwidth     :     1116.98 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       42.41 sec
+ I/O   bandwidth     :     1473.80 MiB/s
+108328.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 196608 -c 5
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=433061888;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108330 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108330.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 433061888
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.19 sec
+ Time for read       :        9.02 sec
+ Time for write      :       67.61 sec
+ Time for close      :        0.49 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1732.53 MiB/s
+ write bandwidth     :      693.28 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       67.71 sec
+ I/O   bandwidth     :      923.03 MiB/s
+108330.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 15
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=5242880;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108332 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108332.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 5242880
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.11 sec
+ Time for read       :        8.99 sec
+ Time for write      :      127.73 sec
+ Time for close      :        0.05 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1738.92 MiB/s
+ write bandwidth     :      366.97 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :      127.84 sec
+ I/O   bandwidth     :      488.90 MiB/s
+108332.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 8
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=247463936;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108333 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108333.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 247463936
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.17 sec
+ Time for read       :        8.10 sec
+ Time for write      :       47.45 sec
+ Time for close      :        0.17 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1929.56 MiB/s
+ write bandwidth     :      987.83 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       47.53 sec
+ I/O   bandwidth     :     1315.01 MiB/s
+108333.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 20
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=399507456;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108334 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108334.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 399507456
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.13 sec
+ Time for read       :        8.20 sec
+ Time for write      :       42.37 sec
+ Time for close      :        0.60 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1905.20 MiB/s
+ write bandwidth     :     1106.33 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       42.46 sec
+ I/O   bandwidth     :     1472.11 MiB/s
+108334.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 655360 -c 2
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=75497472;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108335 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108335.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 75497472
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.13 sec
+ Time for read       :        8.05 sec
+ Time for write      :       55.56 sec
+ Time for close      :        0.20 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1939.93 MiB/s
+ write bandwidth     :      843.66 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       55.65 sec
+ I/O   bandwidth     :     1123.07 MiB/s
+108335.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 458752 -c 16
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=472907776;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108336 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108336.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 472907776
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.09 sec
+ Time for read       :        6.33 sec
+ Time for write      :       38.86 sec
+ Time for close      :        0.32 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     2467.84 MiB/s
+ write bandwidth     :     1206.15 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       38.94 sec
+ I/O   bandwidth     :     1604.96 MiB/s
+108336.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 13
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=154140672;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108337 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108337.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 154140672
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.16 sec
+ Time for read       :       15.86 sec
+ Time for write      :       47.39 sec
+ Time for close      :        0.38 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :      985.25 MiB/s
+ write bandwidth     :      989.05 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       47.50 sec
+ I/O   bandwidth     :     1315.91 MiB/s
+108337.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 1310720 -c 17
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=66060288;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108338 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108338.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 66060288
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.16 sec
+ Time for read       :        6.54 sec
+ Time for write      :       67.68 sec
+ Time for close      :        0.17 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     2387.56 MiB/s
+ write bandwidth     :      692.59 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       67.78 sec
+ I/O   bandwidth     :      922.04 MiB/s
+108338.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 1179648 -c 4
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=176160768;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108340 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108340.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 176160768
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.91 sec
+ Time for read       :        9.99 sec
+ Time for write      :       65.52 sec
+ Time for close      :        0.53 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1563.64 MiB/s
+ write bandwidth     :      715.39 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       66.25 sec
+ I/O   bandwidth     :      943.44 MiB/s
+108340.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 196608 -c 16
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=401604608;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108342 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108342.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 401604608
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.14 sec
+ Time for read       :       11.24 sec
+ Time for write      :       40.22 sec
+ Time for close      :        0.61 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1390.42 MiB/s
+ write bandwidth     :     1165.51 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       40.33 sec
+ I/O   bandwidth     :     1549.82 MiB/s
+108342.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 786432 -c 4
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=342884352;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108345 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108345.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 342884352
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.17 sec
+ Time for read       :        6.15 sec
+ Time for write      :       58.32 sec
+ Time for close      :        0.72 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     2541.82 MiB/s
+ write bandwidth     :      803.72 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       58.42 sec
+ I/O   bandwidth     :     1069.93 MiB/s
+108345.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 1
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=138412032;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108346 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108346.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 138412032
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.10 sec
+ Time for read       :       29.21 sec
+ Time for write      :       76.07 sec
+ Time for close      :        0.25 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :      534.91 MiB/s
+ write bandwidth     :      616.19 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       76.15 sec
+ I/O   bandwidth     :      820.75 MiB/s
+108346.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 17
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=133169152;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108347 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108347.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 133169152
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.13 sec
+ Time for read       :       13.38 sec
+ Time for write      :       43.04 sec
+ Time for close      :        0.37 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1167.83 MiB/s
+ write bandwidth     :     1089.12 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       43.16 sec
+ I/O   bandwidth     :     1448.20 MiB/s
+108347.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 655360 -c 0
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=202375168;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108348 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108348.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 202375168
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.13 sec
+ Time for read       :       28.97 sec
+ Time for write      :       91.27 sec
+ Time for close      :        0.08 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :      539.29 MiB/s
+ write bandwidth     :      513.60 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       91.37 sec
+ I/O   bandwidth     :      684.04 MiB/s
+108348.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 720896 -c 4
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=350224384;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108350 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108350.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 350224384
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.15 sec
+ Time for read       :        9.30 sec
+ Time for write      :       46.89 sec
+ Time for close      :        0.75 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1679.81 MiB/s
+ write bandwidth     :      999.62 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       46.99 sec
+ I/O   bandwidth     :     1330.17 MiB/s
+108350.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 16
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=526385152;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108351 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108351.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 526385152
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        1.04 sec
+ Time for read       :       50.12 sec
+ Time for write      :       37.64 sec
+ Time for close      :        1.14 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :      311.76 MiB/s
+ write bandwidth     :     1245.19 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       37.97 sec
+ I/O   bandwidth     :     1645.97 MiB/s
+108351.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 12
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=199229440;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108352 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108352.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 199229440
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.13 sec
+ Time for read       :       13.97 sec
+ Time for write      :       42.46 sec
+ Time for close      :        0.15 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1118.21 MiB/s
+ write bandwidth     :     1104.05 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       42.55 sec
+ I/O   bandwidth     :     1468.80 MiB/s
+108352.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 14
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=36700160;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108358 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108358.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 36700160
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.05 sec
+ Time for read       :        4.23 sec
+ Time for write      :       45.56 sec
+ Time for close      :        0.12 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1845.95 MiB/s
+ write bandwidth     :      514.40 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       45.62 sec
+ I/O   bandwidth     :      685.00 MiB/s
+108358.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 589824 -c 17
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=312475648;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108359 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108359.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 312475648
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.19 sec
+ Time for read       :       17.12 sec
+ Time for write      :       18.38 sec
+ Time for close      :        0.21 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      456.22 MiB/s
+ write bandwidth     :     1275.42 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       18.44 sec
+ I/O   bandwidth     :     1694.33 MiB/s
+108359.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 851968 -c 19
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=415236096;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108360 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108360.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 415236096
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.18 sec
+ Time for read       :        5.22 sec
+ Time for write      :       17.79 sec
+ Time for close      :        0.34 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1496.94 MiB/s
+ write bandwidth     :     1317.53 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       17.87 sec
+ I/O   bandwidth     :     1748.30 MiB/s
+108360.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 8
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=493879296;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108361 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108361.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 493879296
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.20 sec
+ Time for read       :        7.89 sec
+ Time for write      :       21.72 sec
+ Time for close      :        0.13 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      990.29 MiB/s
+ write bandwidth     :     1079.02 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       21.79 sec
+ I/O   bandwidth     :     1434.33 MiB/s
+108361.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 327680 -c 2
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=423624704;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108362 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108362.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 423624704
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.11 sec
+ Time for read       :        4.83 sec
+ Time for write      :       29.44 sec
+ Time for close      :        0.35 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1615.92 MiB/s
+ write bandwidth     :      796.05 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       29.51 sec
+ I/O   bandwidth     :     1058.89 MiB/s
+108362.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 655360 -c 0
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=351272960;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108363 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108363.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 351272960
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.05 sec
+ Time for read       :        8.16 sec
+ Time for write      :       41.12 sec
+ Time for close      :        0.47 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      956.93 MiB/s
+ write bandwidth     :      570.02 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       41.18 sec
+ I/O   bandwidth     :      758.83 MiB/s
+108363.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 1048576 -c 12
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=159383552;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108365 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108365.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 159383552
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.16 sec
+ Time for read       :        4.98 sec
+ Time for write      :       22.82 sec
+ Time for close      :        0.18 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1569.07 MiB/s
+ write bandwidth     :     1027.01 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       22.96 sec
+ I/O   bandwidth     :     1360.98 MiB/s
+108365.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 12
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=425721856;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108366 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108366.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 425721856
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.11 sec
+ Time for read       :        8.11 sec
+ Time for write      :       18.96 sec
+ Time for close      :        0.34 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      963.51 MiB/s
+ write bandwidth     :     1235.99 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       19.03 sec
+ I/O   bandwidth     :     1641.78 MiB/s
+108366.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 458752 -c 16
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=468713472;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108367 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108367.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 468713472
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.19 sec
+ Time for read       :        7.86 sec
+ Time for write      :       20.91 sec
+ Time for close      :        0.22 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      993.94 MiB/s
+ write bandwidth     :     1121.13 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       20.97 sec
+ I/O   bandwidth     :     1489.94 MiB/s
+108367.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 6
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=530579456;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108368 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108368.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 530579456
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.16 sec
+ Time for read       :        8.30 sec
+ Time for write      :       22.58 sec
+ Time for close      :        0.39 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      941.22 MiB/s
+ write bandwidth     :     1037.75 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       22.67 sec
+ I/O   bandwidth     :     1378.54 MiB/s
+108368.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 8
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=162529280;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108370 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108370.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 162529280
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.32 sec
+ Time for read       :        6.73 sec
+ Time for write      :       22.92 sec
+ Time for close      :        0.16 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1161.04 MiB/s
+ write bandwidth     :     1022.61 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       23.13 sec
+ I/O   bandwidth     :     1351.01 MiB/s
+108370.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 7
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=293601280;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108371 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108371.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 293601280
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.11 sec
+ Time for read       :       39.47 sec
+ Time for write      :       19.96 sec
+ Time for close      :        0.33 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      197.96 MiB/s
+ write bandwidth     :     1174.42 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       20.03 sec
+ I/O   bandwidth     :     1560.29 MiB/s
+108371.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 917504 -c 2
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=55574528;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108372 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108372.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 55574528
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.14 sec
+ Time for read       :        7.11 sec
+ Time for write      :       33.39 sec
+ Time for close      :        0.10 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1098.85 MiB/s
+ write bandwidth     :      701.93 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       33.47 sec
+ I/O   bandwidth     :      933.71 MiB/s
+108372.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 13
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=449839104;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108373 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108373.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 449839104
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.08 sec
+ Time for read       :        9.63 sec
+ Time for write      :       16.67 sec
+ Time for close      :        0.30 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      811.55 MiB/s
+ write bandwidth     :     1406.12 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       16.75 sec
+ I/O   bandwidth     :     1866.05 MiB/s
+108373.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 786432 -c 1
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=61865984;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108374 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108374.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 61865984
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.32 sec
+ Time for read       :        9.10 sec
+ Time for write      :       36.52 sec
+ Time for close      :        0.17 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      858.33 MiB/s
+ write bandwidth     :      641.74 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       36.62 sec
+ I/O   bandwidth     :      853.40 MiB/s
+108374.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 11
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=535822336;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108375 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108375.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 535822336
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.26 sec
+ Time for read       :       47.10 sec
+ Time for write      :       18.48 sec
+ Time for close      :        0.36 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      165.87 MiB/s
+ write bandwidth     :     1268.27 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       18.61 sec
+ I/O   bandwidth     :     1679.02 MiB/s
+108375.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 19
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=27262976;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108376 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108376.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 27262976
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.08 sec
+ Time for read       :       16.72 sec
+ Time for write      :       51.87 sec
+ Time for close      :        0.07 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :      467.29 MiB/s
+ write bandwidth     :      451.83 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       51.94 sec
+ I/O   bandwidth     :      601.65 MiB/s
+108376.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 589824 -c 5
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=enable;cb_buffer_size=405798912;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108378 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108378.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 405798912
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.19 sec
+ Time for read       :        4.48 sec
+ Time for write      :       19.53 sec
+ Time for close      :        0.37 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1745.82 MiB/s
+ write bandwidth     :     1200.38 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       19.61 sec
+ I/O   bandwidth     :     1593.39 MiB/s
+108378.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 983040 -c 19
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=enable;romio_cb_write=enable;cb_buffer_size=8388608;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108379 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108379.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 8388608
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.08 sec
+ Time for read       :        6.78 sec
+ Time for write      :       72.64 sec
+ Time for close      :        0.04 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1151.86 MiB/s
+ write bandwidth     :      322.63 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       72.71 sec
+ I/O   bandwidth     :      429.82 MiB/s
+108379.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 12
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=enable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=44040192;
+root - DEBUG - S3D-IO :400 400 400 4 4 4 1
+root - DEBUG - No of nodes - 8
+S3D-IO_8
+8, 8
+Running the job
+S3D-IO_8.o108380 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108380.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 44040192
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 8
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = enable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :      64
+ Global array size   :     400 x    400 x    400
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.08 sec
+ Time for read       :        5.00 sec
+ Time for write      :       41.73 sec
+ Time for close      :        0.06 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :        7.63 GiB
+ total write amount  :       22.89 GiB
+ read  bandwidth     :     1563.40 MiB/s
+ write bandwidth     :      561.69 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       30.52 GiB
+ total I/O   time    :       41.80 sec
+ I/O   bandwidth     :      747.68 MiB/s
+108380.mgmt03
+S3D-IO_8
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 327680 -c 17
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=54525952;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108384 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108384.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 54525952
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = enable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.23 sec
+ Time for read       :       23.14 sec
+ Time for write      :       74.84 sec
+ Time for close      :        0.21 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :      675.37 MiB/s
+ write bandwidth     :      626.34 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       74.94 sec
+ I/O   bandwidth     :      834.02 MiB/s
+108384.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 65536 -c 11
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=enable;romio_cb_write=disable;cb_buffer_size=379584512;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108386 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108386.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 379584512
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        2.61 sec
+ Time for read       :       62.71 sec
+ Time for write      :       47.19 sec
+ Time for close      :        0.63 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :      249.18 MiB/s
+ write bandwidth     :      993.40 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       47.40 sec
+ I/O   bandwidth     :     1318.54 MiB/s
+108386.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 131072 -c 2
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=283115520;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108388 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108388.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 283115520
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.25 sec
+ Time for read       :       28.20 sec
+ Time for write      :       60.81 sec
+ Time for close      :        0.56 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :      554.11 MiB/s
+ write bandwidth     :      770.82 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       60.96 sec
+ I/O   bandwidth     :     1025.32 MiB/s
+108388.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 720896 -c 7
+root - DEBUG - MPI parameters:romio_ds_read=disable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=429916160;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108390 finished
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/108390.mgmt03
+ ---- MPI file info used ----
+                      cb_buffer_size = 429916160
+                       romio_cb_read = enable
+                      romio_cb_write = enable
+                            cb_nodes = 16
+                   romio_no_indep_rw = true
+                        romio_cb_pfr = disable
+                   romio_cb_fr_types = aar
+               romio_cb_fr_alignment = 1
+               romio_cb_ds_threshold = 0
+                   romio_cb_alltoall = automatic
+                  ind_rd_buffer_size = 4194304
+                  ind_wr_buffer_size = 524288
+                       romio_ds_read = disable
+                      romio_ds_write = disable
+                      cb_config_list = *:1
+               romio_filesystem_type = NFS:
+               romio_aggregator_list = 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
+                nc_header_align_size = 512
+                   nc_var_align_size = 4
+                nc_record_align_size = 4
+           nc_header_read_chunk_size = 262144
+                    nc_in_place_swap = auto
+                   pnetcdf_subfiling = disable
+
+ ++++ I/O is done through PnetCDF ++++
+ I/O method          : nonblocking APIs
+ Run with restart    : True
+ No. MPI processes   :     128
+ Global array size   :     400 x    400 x    800
+ output file path    : output/
+ file striping count :       0
+ file striping size  :       0 bytes
+ -----------------------------------------------
+ Time for open       :        0.46 sec
+ Time for read       :        8.40 sec
+ Time for write      :       71.66 sec
+ Time for close      :        0.85 sec
+ no. read  calls     :        4    per process
+ no. write calls     :       12    per process
+ total read  amount  :       15.26 GiB
+ total write amount  :       45.78 GiB
+ read  bandwidth     :     1860.66 MiB/s
+ write bandwidth     :      654.11 MiB/s
+ -----------------------------------------------
+ total I/O   amount  :       61.04 GiB
+ total I/O   time    :       71.99 sec
+ I/O   bandwidth     :      868.22 MiB/s
+108390.mgmt03
+S3D-IO_16
+
+root - DEBUG - Lustre parameters:lfs setstripe  . -s 262144 -c 6
+root - DEBUG - MPI parameters:romio_ds_read=enable;romio_ds_write=disable;romio_cb_read=disable;romio_cb_write=disable;cb_buffer_size=190840832;
+root - DEBUG - S3D-IO :400 400 800 4 4 8 1
+root - DEBUG - No of nodes - 16
+S3D-IO_16
+16, 8
+Running the job
+S3D-IO_16.o108391 finished
+
+
