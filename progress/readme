@@ -15,6 +15,7 @@ TASK: To store output of all runs.
 
 TODO 
 TASK: contains things which are left
+requirements.txt for python codes
 
 model/inputfile
 TASK: Contains parameter to be chosen from.
