@@ -1,0 +1,18 @@
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/110462.mgmt03
+ Reading from input file inputbt.data
+[mpiexec@cn197] HYDT_bscu_wait_for_completion (../../tools/bootstrap/utils/bscu_wait.c:113): one of the processes terminated badly; aborting
+[mpiexec@cn197] HYDT_bsci_wait_for_completion (../../tools/bootstrap/src/bsci_wait.c:23): launcher returned error waiting for completion
+[mpiexec@cn197] HYD_pmci_wait_for_completion (../../pm/pmiserv/pmiserv_pmci.c:521): launcher returned error waiting for completion
+[mpiexec@cn197] main (../../ui/mpich/mpiexec.c:1059): process manager error waiting for completion

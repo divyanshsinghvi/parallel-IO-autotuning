@@ -69,14 +69,13 @@ for i in arr:
     inputfile = "inputbt.data"
     os.remove(inputfile)
     with open(inputfile, "a") as file:
-        file.write(i + "\n3\n3\n" +specific_commands+"\n"+outputFolder )                 
+        file.write(i + "\n3\n1\n" +specific_commands+"\n"+outputFolder )                 
     
     mpi_hints=""
     for key in data["mpi"]:
         mpi_hints+=key
         mpi_hints+="="+data["mpi"][key]+";"
     
-    mpi_hints=""    
     logging.debug("MPI parameters:" + mpi_hints)
     logging.debug(benchmark + " :" + specific_commands)
     log = open('../bt_stats.txt','a')

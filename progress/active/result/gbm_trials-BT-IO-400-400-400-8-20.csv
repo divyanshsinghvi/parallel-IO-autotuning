@@ -1,0 +1,7 @@
+loss,params,iteration,train_time,output
+370012.4625322474,"{'cb_buffer_size': 38797312.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 5.0, 'setstripe-size': 6684672.0}",21,79.26850604079664,"btio-pnetcdf-1.1.1 400-400-400 377.69 2441.41 6.46 38.36 2441.41 63.64 6684672 5 enable disable enable disable 38797312 
+"
+2706.202781850453,"{'cb_buffer_size': 192937984.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'enable', 'setstripe-count': 27.0, 'setstripe-size': 3604480.0}",22,22.87620361149311,"btio-pnetcdf-1.1.1 400-400-400 222.75 2441.41 10.96 921.81 2441.41 2.65 3604480 27 disable enable disable enable 192937984 
+"
+771.356450998889,"{'cb_buffer_size': 128974848.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 10.0, 'setstripe-size': 6619136.0}",23,19.847687249071896,"btio-pnetcdf-1.1.1 400-400-400 385.70 2441.41 6.33 929.61 2441.41 2.63 6619136 10 enable disable enable enable 128974848 
+"
