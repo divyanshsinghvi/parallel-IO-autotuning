@@ -1,1 +1,1 @@
-{"mpi": {"romio_ds_read": "disable", "romio_ds_write": "enable", "romio_cb_read": "disable", "romio_cb_write": "enable", "cb_buffer_size": "509607936"}, "lfs": {"setstripe": {"size": 30998528, "count": 10}}}
+{"mpi": {"romio_ds_read": "disable", "romio_ds_write": "enable", "romio_cb_read": "disable", "romio_cb_write": "disable", "cb_buffer_size": "5242880"}, "lfs": {"setstripe": {"size": 29425664, "count": 85}}}
