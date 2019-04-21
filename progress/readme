@@ -1,4 +1,87 @@
-FILE DESCRIPTIONS
+CODE: 
+|-- active
+|   |-- BTIO active learning.ipynb 						##### Contains the code for running BTIO benchmark for active learning; project_dir variable must be changed; SEE POINT 1 to run it
+|   |-- confex.json 								##### Used to dump the MPI and lusture parameters from XGB-BOOST and ETR model when used with active learning 
+|   |-- final.sav								##### ETR Model ran over stats.txt for S3D-IO(Should be generated again;Not committed in git repo)
+|   |-- finalxgb.sav								##### XGB Model ran over stats.txt for S3D-IO(Should be generated again;Not committed in git repo)
+|   |-- generalAutoTuner.ipynb							##### Contains the general code for running both BTIO/S3D-IO benchmark for active learning; SEE POINT 1 to run it.
+|   |-- predicted_model.ipynb
+|   |-- predicting_time.ipynb
+|   |-- predicting Write Bandwidth-XGB-BOOST.ipynb
+|   |-- result
+|   |   |-- gbm_trials-*.csv
+|   |-- S3D-IO active learning.ipynb
+|   |-- scaler.save
+|   |-- scalerxgb.save
+|   |-- Untitled-Copy1.ipynb
+|   |-- Untitled-Copy2.ipynb
+|   `-- visual_normal_distribution.ipynb
+|-- app.log
+|-- automate.sh
+|-- best.txt
+|-- bt_best.txt
+|-- bt_default.py
+|-- bt_default.txt
+|-- btio-default-best-plotscript.py
+|-- btio-pnetcdf-1.1.1
+|   |-- Makefile
+|   |-- output
+|   |-- qsub.sh
+|   `-- run.sh
+|-- bt_plots
+|-- |-- *.png
+|-- bt_read_config_general.py
+|-- bt_read_config.py
+|-- bt_stats.txt
+|-- confex.json
+|-- config.json
+|-- default-best-plotscript.py
+|-- default_run.sh
+|-- default_S3D.py
+|-- default.txt
+|-- model
+|   |-- confex.json
+|   |-- inputfile
+|   |-- modelparser.py
+|   |-- modelparser.pyc
+|   |-- paramcat
+|   `-- randomParameters.py
+|-- plots
+|-- |-- *.png
+|-- progress.pdf
+|-- read_config_general.py
+|-- read_config.py
+|-- readme
+|-- regression
+|   |-- model.py
+|   |-- run.sh
+|   `-- stats.txt
+|-- S3D-IO
+|   |-- COPYRIGHT
+|   |-- hostfile
+|   |-- init_field.f90
+|   |-- io.f90
+|   |-- io_profiling_m.f90
+|   |-- main.f90
+|   |-- Makefile
+|   |-- output
+|   |-- param_m.f90
+|   |-- pnetcdf_m.f90
+|   |-- qsub.sh
+|   |-- random_number.f90
+|   |-- README.md
+|   |-- RELEASE_NOTE
+|   |-- run.sh
+|   |-- runtime_m.f90
+|   |-- solve_driver.f90
+|   |-- topology_m.f90
+|   `-- variables_m.f90
+`-- stats.txt
+
+
+1)  project_dir variable must be changed in cell 3; To run S3D-IO with active learning 
+app.log:
+Contains the logs of all the runs that we have done over hpc for both S3D-IO and BT-IO for all models.  
 
 automate.sh: 
 TASK : Just run `bash automate.sh` and you will get your best optimum tuning parameters.
@@ -16,6 +99,10 @@ TASK: To store output of all runs.
 TODO 
 TASK: contains things which are left
 requirements.txt for python codes
+change absolute paths to relative paths
+MAKEFILE PATHS OF BENCHMARKS
+CHANGE best.txt path from active to some other using other models like ETR and XGBBoost
+
 
 model/inputfile
 TASK: Contains parameter to be chosen from.
@@ -25,6 +112,11 @@ TASK : Forms a config file by chosing randomparameters from inputfile
 
 model/paramcat
 TASK: Stores the category of the parameters, real valued or categorical
+
+
+RUNNING THE CODE:
+
+
 
 
 CHALLENGES FACED:

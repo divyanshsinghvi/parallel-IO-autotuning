@@ -27,20 +27,13 @@ df_best['config']=df_best['col1']+'-'+df_best['col2']+'-'+df_best['col3']
 print(df_best.shape)
 df = pd.merge(df,df_best,on=['config','totalProcesses'])
 #print(df.iloc[:,1]["200-200-400-4-4-4-1"])
-fig, axarr = plt.subplots(4)
+fig, axarr = plt.subplots(4,constrained_layout=True)
 i = 0
 pd.set_option('display.max_columns', 500)
-for f in set(df['totalProcesses']):
+for f in sorted(set(df['totalProcesses'])):
     k =  df[df['totalProcesses'] == f]
-    #print(k)
-    #k.iloc[:,[2,5]].plot.bar(x='config',title=f,figsize=(15,10),legend=True,fontsize=12)
     k.plot.bar(x='config',y=[2,21,5,24],title=f,figsize=(15,10),legend=True,fontsize=10,ax=axarr[i])
     axarr[i].legend(["read_default","read_active","write_default","write_active"])
+    axarr[i].tick_params(axis='x',labelrotation=0)
     i = i+1
-    #plt.bar(x= k.config,y=k.iloc[:,2].astype(float))
-plt.show()
-#config = z[0]+'-'+z[1]+'-'+z[2]
-#processes = z[3]+'-'+z[4]+'-'+z[5]+'-'
-#tp = pd.DataFrame(pd.to_numeric(z[3])*pd.to_numeric(z[4])*pd.to_numeric(z[5])).astype(str)
-#processes = pd.DataFrame(processes)+ tp
-#print(pd.DataFrame(config,processes),df)
+plt.savefig("s3diodefaultvsbest.png")
