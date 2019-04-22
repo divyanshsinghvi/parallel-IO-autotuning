@@ -43,6 +43,7 @@ os.chdir(benchmarkFolder)
 
 arr = ["w","r"]
 wT=[]
+subprocess.Popen(shlex.split("lfs setstripe -c 1 -s 1048576 ./output/"), shell=False)
 for i in arr:
     inputfile = "inputbt.data"
     os.remove(inputfile)

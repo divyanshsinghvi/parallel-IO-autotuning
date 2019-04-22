@@ -41,7 +41,7 @@ for opt, arg in opts:
         ppn = arg
 #print(benchmark + specific_commands + str(nodes) + str(ppn))
 os.chdir(benchmarkFolder)
-#out=subprocess.Popen(["lfs", "getstripe","-d", "."], shell=False, stdout=subprocess.PIPE) 
+out=subprocess.Popen(["lfs", "setstripe","-c1", "-s1048576","output/"], shell=False, stdout=subprocess.PIPE) 
 
 
 mpi_hints=""

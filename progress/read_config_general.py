@@ -40,7 +40,7 @@ for opt, arg in opts:
     elif opt in ("-n", "--nodes"):
         nodes = arg
     elif opt in ("-p", "--ppn"):
-        ppn = arg
+        ppn = str(arg)
 #print(benchmark + specific_commands + str(nodes) + str(ppn))
 os.chdir(benchmarkFolder)
 #out=subprocess.Popen(["lfs", "getstripe","-d", "."], shell=False, stdout=subprocess.PIPE) 

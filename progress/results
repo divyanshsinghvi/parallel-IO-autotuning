@@ -1,0 +1,18 @@
+XGBBoost predictions: 
+%- R2 square
+5% - 62.69
+10% - 81.2
+15% - 81.3
+20% - 84.6
+30% - 85.8
+50% - 87
+
+ETR - 
+80% train
+1000 max_depth , n_estimators = 300 80
+100 max_depth , n_estimators = 300 73
+100 max_depth , n_estimators = 30 75.3
+
+70% train
+100 max_depth , n_estimators = 30 76.3
+100 max_depth , n_estimators = 300 80
