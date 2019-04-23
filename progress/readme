@@ -1,85 +1,188 @@
 CODE: 
 |-- active
 |   |-- BTIO active learning.ipynb 						##### Contains the code for running BTIO benchmark for active learning; project_dir variable must be changed; SEE POINT 1 to run it
+|   |-- btiofinalxgb.sav                            #### BTIO xgb trained model
+|   |-- btioscalerxgb.save                          #### BTIO scalaler for xgm to normalize the data
 |   |-- confex.json 								##### Used to dump the MPI and lusture parameters from XGB-BOOST and ETR model when used with active learning 
 |   |-- final.sav								##### ETR Model ran over stats.txt for S3D-IO(Should be generated again;Not committed in git repo)
 |   |-- finalxgb.sav								##### XGB Model ran over stats.txt for S3D-IO(Should be generated again;Not committed in git repo)
 |   |-- generalAutoTuner.ipynb							##### Contains the general code for running both BTIO/S3D-IO benchmark for active learning; SEE POINT 1 to run it.
-|   |-- predicted_model.ipynb
-|   |-- predicting_time.ipynb
-|   |-- predicting Write Bandwidth-XGB-BOOST.ipynb
-|   |-- result
-|   |   |-- gbm_trials-*.csv
-|   |-- S3D-IO active learning.ipynb
-|   |-- scaler.save
-|   |-- scalerxgb.save
-|   |-- Untitled-Copy1.ipynb
-|   |-- Untitled-Copy2.ipynb
-|   `-- visual_normal_distribution.ipynb
-|-- app.log
-|-- automate.sh
-|-- best.txt
-|-- bt_best.txt
-|-- bt_default.py
-|-- bt_default.txt
-|-- btio-default-best-plotscript.py
-|-- btio-pnetcdf-1.1.1
-|   |-- Makefile
+|   |-- predicted_model-BTIO.ipynb             #### Model 2 and Model 3 : xgb model and ert model to predict values for BTIO; Currently xgb model is implemented and ert is commented;POINT 2 
+|   |-- predicted_model.ipynb                  #### Model 2 and Model 3 : xgb model and ert model to predict for S3D-IO; Currently xgb implemented and ert is commented; POINT 2   
+|   |-- predicting_time.ipynb                  #### ERT model is implemented in this code for S3D-IO
+|   |-- predicting Write Bandwidth-XGB-BOOST-BTIO.ipynb   #### XGB BOOST for BTIO model implemented 
+|   |-- predicting Write Bandwidth-XGB-BOOST.ipynb        #### XGB BOOST for S3DIO model implemented 
+|   |-- result                        
+|   |   |-- gbm_trials-*.csv                          #### contains all runs of the models 
+|   |-- S3D-IO active learning.ipynb                 #### Model 1 for S3D-IO
+|   |-- scaler.save                                  ####  S3D-IO ERT model scaler to normalize
+|   |-- scalerxgb.save                               ####  S3D-IO xgboost model scalar to normalize
+|   |-- Untitled-Copy1.ipynb                         #### Not useful; only for tests
+|   |-- Untitled-Copy2.ipynb                         #### Not useful; only for tests
+|   `-- visual_normal_distribution.ipynb              #### Not useful; only for tests
+|-- app.log    #### Contains logs of all the runs of all the benchmarks we did
+|-- automate.sh  #### May  run random model; No more needed; We have gone far ahead of it
+|-- best.txt    #### Model 1 best results of configuration output S3D-IO parameters 
+|-- bt_best.txt   #### Model 1 best results of configuration output BT-IO parameters 
+|-- bt_default.py #### Running BTIO on default parameters
+|-- bt_default.txt #### Result of default parameter runs of btio
+|-- btio-default-best-plotscript.py  #### Plot script for default vs best for BTIO
+|-- btio-pnetcdf-1.1.1  
+|   |-- Makefile    #### Change pnetcdf directory
 |   |-- output
 |   |-- qsub.sh
 |   `-- run.sh
-|-- bt_plots
+|-- BTIOstats.txt   #### Logs All runs of BTIO in short format; used to Train the model ert and xgboost
+|-- bt_plots       #### All plots for btio by model 1 for tuning parameters
 |-- |-- *.png
-|-- bt_read_config_general.py
-|-- bt_read_config.py
-|-- bt_stats.txt
-|-- confex.json
+|-- bt_read_config_general.py #### same as read_config_general.py for BTIO
+|-- bt_read_config.py  #### don't know if it will work now; Same as read_config.py but for BTIO
+|-- bt_stats.txt     #### logs all runs of BTIO in short format
+|-- confex.json       #### MPI parameters are dump and used from here
 |-- config.json
-|-- default-best-plotscript.py
-|-- default_run.sh
-|-- default_S3D.py
-|-- default.txt
-|-- model
+|-- default-best-plotscript.py  ### plot default vs best bandwidths 
+|-- default_run.sh     #### 
+|-- default_S3D.py     #### Running S3D-IO over defalt
+|-- default.txt        #### Default parameters runs for S3D-IO
+|-- model              #### Some useful files earlier; don't remember whether they are used now.
 |   |-- confex.json
 |   |-- inputfile
 |   |-- modelparser.py
 |   |-- modelparser.pyc
 |   |-- paramcat
-|   `-- randomParameters.py
-|-- plots
+|   `-- randomParameters.py 
+|-- plots           #### All plots for S3D-IO by model 1
 |-- |-- *.png
-|-- progress.pdf
-|-- read_config_general.py
-|-- read_config.py
-|-- readme
-|-- regression
+|-- progress.pdf                #### mid term presentation
+|-- read_config_general.py       #### A more general script of script below can pass nodes and ppn
+|-- read_config.py                #### Reads tunable parameters from confex.json and runs S3D-IO over those; Will not work possibly now
+|-- readme                       
+|-- regression                     #### Not useful anymore possibly
 |   |-- model.py
 |   |-- run.sh
 |   `-- stats.txt
 |-- S3D-IO
 |   |-- COPYRIGHT
 |   |-- hostfile
-|   |-- init_field.f90
-|   |-- io.f90
-|   |-- io_profiling_m.f90
-|   |-- main.f90
 |   |-- Makefile
 |   |-- output
-|   |-- param_m.f90
-|   |-- pnetcdf_m.f90
 |   |-- qsub.sh
-|   |-- random_number.f90
 |   |-- README.md
 |   |-- RELEASE_NOTE
 |   |-- run.sh
-|   |-- runtime_m.f90
-|   |-- solve_driver.f90
-|   |-- topology_m.f90
-|   `-- variables_m.f90
-`-- stats.txt
+|-- S3DIOstats.txt ### All logs of runs of S3D-IO in shorter format; used to train xgboost and ert
+|-- somemoreplots  ### xgboost default vs best plots
+|   |-- bt-default-best-plotscript.py
+|   |-- bt_default.txt
+|   |-- default-best-plotscript.py
+|   |-- default.txt
+|   |-- xgbtioresult.txt
+|   `-- xgresult.txt`
+`-- stats.txt  ### All logs of runs of S3D-IO in shorter format
+|-- xgbtioresult.txt ####xgb btio results
+`-- xgresult.txt      #### Xgb S3D-IO results
+`
 
+
+
+INSTRUCTION FOR RUNNING CODES:
+1) ESSENTIAL REQUIREMENTS:
+INSTALL PYTHON3.6.7
+PUT bin directory of PYTHON/bin in  PATH Variable
+export PNETCDF_DIR="Your pnetcdf directory"
+
+
+2) python3 -m pip install --user virtualenv
+python3 -m virtualenv env
+source env/bin/activate
+python3 -m pip install jupyter
+
+
+
+cd <CODE Directory>
+cd S3D-IO
+mkdir output
+make
+cd ../
+cd btio-pnetcdf-1.1.1/
+make
+mkdir output
+(If make is unsuccessful try hardcoding the PNETCDF_DIR variable in Makefile of both benchmarks)
+
+##### IN the python env after source env/bin/activate
+cd <Code Directory>
+pip install -r requirements.txt
+#### Though we tried to pour all python package in the requirements.txt. In case if something is missed or you encounter an error such as module not found. Kindly search the module name on internet and run `pip install <module name>`
+
+######  To run model 1 For S3D-IO
+cd active
+jupyter notebook 
+#### Firefox will open.
+Select the S3D-IO active learning.ipynb
+Change project_dir variable in cell 2 to your <CODE Directory>; Don't forget adding / at the end of the directory like in example
+To run a configuration of S3D-IO change in cell 2 -n for nodes and -c for nx_g ny_g nz_g npx npy npz restart
+Then click on |>|> (restart the kernel) button to run the code
+
+
+######  To run model 1 For BT-IO
+cd active
+jupyter notebook 
+#### Firefox will open.
+Select the BTIO active learning.ipynb
+Change project_dir variable in cell 2 to your <CODE Directory>; Don't forget adding / at the end of the directory like in example
+To run a configuration of BT-IO change in cell 2 -n for nodes and -p for ppn and -c for grid point
+Then click on |>|> (restart the kernel) button to run the code
+
+
+######  To run model 3 For S3D-IO
+cd active
+jupyter notebook 
+#### Firefox will open.
+Select the predicting Write Bandwidth-XGB-BOOST.ipynb
+Change project_dir variable in cell 2 to your <CODE Directory>; Don't forget adding / at the end of the directory like in example; Though there is no need to change in it
+Then click on |>|> (restart the kernel) button to run the code
+Go back to previous page.
+Select the predicted_model.ipynb
+Change cell 3 and 4 in os.chdir function with address of your active directory and in with open function with <address of active directory>/confex.json. 
+Then click on |>|> (restart the kernel) button to run the code
+
+
+######  To run model 3 For BT-IO
+cd active
+jupyter notebook 
+#### Firefox will open.
+Select the predicting Write Bandwidth-XGB-BOOST-BTIO.ipynb
+Change project_dir variable in cell 2 to your <CODE Directory>; Don't forget adding / at the end of the directory like in example; Though there is no need to change in it
+Then click on |>|> (restart the kernel) button to run the code
+Go back to previous page.
+Select the predicted_model-BTIO.ipynb
+Change cell 3 and 4 in os.chdir function with address of your active directory and in with open function with <address of active directory>/confex.json. 
+Then click on |>|> (restart the kernel) button to run the code
+
+
+######  To run model 2 For S3D-IO
+cd active
+jupyter notebook 
+#### Firefox will open.
+Select the predicting time.ipynb
+Change project_dir variable in cell 2 to your <CODE Directory>; Don't forget adding / at the end of the directory like in example; Though there is no need to change in it
+Then click on |>|> (restart the kernel) button to run the code
+Go back to previous page.
+Select the predicted_model.ipynb
+Comment 3 and 4 cells
+Uncomment 5 and 6 cells
+Change cell 5 and 6 in os.chdir function with address of your active directory and in with open function with <address of active directory>/confex.json. 
+Then click on |>|> (restart the kernel) button to run the code
 
 1)  project_dir variable must be changed in cell 3; To run S3D-IO with active learning 
+
+
+
+
+
+
+
+########################## PREVIOS README || POSSIBLY NOT USEFUL ANYMORE $$$$$$$$$$$$$$$$$$$$$$$$$$
 app.log:
 Contains the logs of all the runs that we have done over hpc for both S3D-IO and BT-IO for all models.  
 
@@ -102,7 +205,7 @@ requirements.txt for python codes
 change absolute paths to relative paths
 MAKEFILE PATHS OF BENCHMARKS
 CHANGE best.txt path from active to some other using other models like ETR and XGBBoost
-
+Put Graph of xgbboost measure vs predicted
 
 model/inputfile
 TASK: Contains parameter to be chosen from.
@@ -115,14 +218,7 @@ TASK: Stores the category of the parameters, real valued or categorical
 
 
 RUNNING THE CODE:
-
-
-
-
 CHALLENGES FACED:
-
 Installing python3 with tk 
-
 FIXES TO BE DONE
-
-in runthebenchmark function in active learning path is        hardcoded -- change that later
+in runthebenchmark function in active learning path is  hardcoded -- change that later

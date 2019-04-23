@@ -13,7 +13,6 @@
 
 MPIF90      = mpif90
 FCFLAGS     = -O2
-PNETCDF_DIR = $(HOME)/pnetcdf-1.11.0/build
 
 COMPILE_F90  = $(MPIF90) $(FCFLAGS) $(INC) -c
 LINK         = $(MPIF90) $(FCFLAGS)
