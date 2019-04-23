@@ -1,0 +1,45 @@
+python bt_default.py -n 8 -c"300 300 480"
+btio-pnetcdf-1.1.1 300-300-480 727.36 1647.95 2.27 300.22 1647.95 5.49 
+
+
+{'cb_buffer_size': 235929600.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 55.0, 'setstripe-size': 15532032.0
+}
+
+python bt_read_config_general.py -n 8 -c"300 300 480"
+btio-pnetcdf-1.1.1 300-300-4808 234.77 1647.95 7.02 62.12 1647.95 26.53 15532032 55 disable disable disable disable 235929600 
+
+
+
+{'cb_buffer_size': 264241152.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 23.0, 'setstripe-size': 2555904.0}
+
+python bt_read_config_general.py -n 8 -c"300 300 300"
+btio-pnetcdf-1.1.1 300-300-3008 247.25 1029.97 4.17 884.83 1029.97 1.16 2555904 23 enable disable disable enable 264241152 
+
+python bt_default.py -n 8 -c"300 300 300"
+btio-pnetcdf-1.1.1 300-300-300 876.15 1029.97 1.18 338.29 1029.97 3.04 
+
+
+{"mpi": {"romio_ds_read": "enable", "romio_ds_write": "disable", "romio_cb_read": "disable", "romio_cb_write": "disable", "cb_buffer_size": "505413632"}, "lfs": {"setstripe": {"size": 14024704, "count": 21}}}
+
+ python bt_default.py -n 8  -c"350 350 350"
+btio-pnetcdf-1.1.1 350-350-350 307.49 1635.55 5.32 264.19 1635.55 6.19 
+(env) [dsinghvi@2k10un01 progress]$ python bt_read_config_general.py -n 8  -c"350 350 350"
+btio-pnetcdf-1.1.1 350-350-3508 175.46 1635.55 9.32 54.18 1635.55 30.19 14024704 21 enable disable disable disable 505413632 
+
+
+python bt_default.py -n 8  -c"600 600 600"
+btio-pnetcdf-1.1.1 600-600-600 960.72 8239.75 8.58 339.72 8239.75 24.25 
+
+{"mpi": {"romio_ds_read": "disable", "romio_ds_write": "enable", "romio_cb_read": "enable", "romio_cb_write": "enable", "cb_buffer_size": "445644800"}, "lfs": {"setstripe": {"size": 2555904, "count": 42}}}
+
+python bt_read_config_general.py -n 8  -c"600 600 600"btio-pnetcdf-1.1.1 600-600-6008 394.84 8239.75 20.87 1370.64 8239.75 6.01 2555904 42 disable enable enable enable 445644800
+
+
+
+ python bt_default.py -n8 -c"200 300 300"
+btio-pnetcdf-1.1.1 200-300-300 340.94 686.65 2.01 318.14 686.65 2.16 
+(env) [dsinghvi@2k10un04 progress]$ python bt_read_config_general.py -n8 -c"200 300 300"
+btio-pnetcdf-1.1.1 200-300-3008 146.42 686.65 4.69 762.16 686.65 0.90 2555904 59 disable disable disable enable 82837504 
+
+{"mpi": {"romio_ds_read": "disable", "romio_ds_write": "disable", "romio_cb_read": "disable", "romio_cb_write": "enable", "cb_buffer_size": "82837504"}, "lfs": {"setstripe": {"size": 2555904, "count": 59}}}
+

@@ -1,0 +1,41 @@
+loss,params,iteration,train_time,output
+0.0014653446045081065,"{'cb_buffer_size': 266338304.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 10.0, 'setstripe-size': 9306112.0}",21,16.546186653897166,"S3D-IO 100-400-400-4-4-4-1 1391.66 1.91 1.40 588.50 5.72 9.96 0.09 0.16 9306112 10 enable disable enable enable 266338304 
+"
+0.0011066939217342807,"{'cb_buffer_size': 334495744.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 11.0, 'setstripe-size': 19529728.0}",22,14.971118024550378,"S3D-IO 100-400-400-4-4-4-1 1017.47 1.91 1.92 695.52 5.72 8.42 0.08 0.23 19529728 11 enable disable enable disable 334495744 
+"
+0.002968374957270374,"{'cb_buffer_size': 77594624.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'enable', 'setstripe-count': 1.0, 'setstripe-size': 17629184.0}",23,19.725406305864453,"S3D-IO 100-400-400-4-4-4-1 718.02 1.91 2.72 502.87 5.72 11.65 0.62 0.11 17629184 1 disable enable enable disable 77594624 
+"
+0.0031536703264820045,"{'cb_buffer_size': 63963136.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 10.0, 'setstripe-size': 15138816.0}",24,19.39382021408528,"S3D-IO 100-400-400-4-4-4-1 899.79 1.91 2.17 468.92 5.72 12.50 0.08 0.03 15138816 10 enable enable enable disable 63963136 
+"
+0.021255829690349882,"{'cb_buffer_size': 73400320.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'enable', 'setstripe-count': 1.0, 'setstripe-size': 32964608.0}",25,32.485235722735524,"S3D-IO 100-400-400-4-4-4-1 749.46 1.91 2.61 233.44 5.72 25.10 0.08 0.15 32964608 1 disable enable enable disable 73400320 
+"
+0.0009756000715367068,"{'cb_buffer_size': 76546048.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 9.0, 'setstripe-size': 25755648.0}",26,15.265151320956647,"S3D-IO 100-400-400-4-4-4-1 1299.75 1.91 1.50 696.20 5.72 8.42 0.30 0.08 25755648 9 enable enable enable disable 76546048 
+"
+0.0010185870242872168,"{'cb_buffer_size': 493879296.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 14.0, 'setstripe-size': 21561344.0}",27,15.380613232031465,"S3D-IO 100-400-400-4-4-4-1 1357.32 1.91 1.44 679.45 5.72 8.62 0.16 0.17 21561344 14 enable disable enable disable 493879296 
+"
+0.001484004245861654,"{'cb_buffer_size': 98566144.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 2.0, 'setstripe-size': 22806528.0}",28,16.592849989421666,"S3D-IO 100-400-400-4-4-4-1 1015.87 1.91 1.92 617.79 5.72 9.48 0.13 0.13 22806528 2 disable disable disable disable 98566144 
+"
+0.0029077840687521707,"{'cb_buffer_size': 22020096.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'enable', 'setstripe-count': 14.0, 'setstripe-size': 9830400.0}",29,39.107255252078176,"S3D-IO 100-400-400-4-4-4-1 1051.97 1.91 1.86 471.83 5.72 12.42 0.54 0.05 9830400 14 disable enable enable enable 22020096 
+"
+0.0006087418636219695,"{'cb_buffer_size': 417333248.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 14.0, 'setstripe-size': 24313856.0}",30,27.29032807610929,"S3D-IO 100-400-400-4-4-4-1 1044.21 1.91 1.87 887.19 5.72 6.60 0.08 0.11 24313856 14 enable enable enable disable 417333248 
+"
+0.000912459754264162,"{'cb_buffer_size': 377487360.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 48.0, 'setstripe-size': 8847360.0}",31,15.14454910159111,"S3D-IO 100-400-400-4-4-4-1 985.82 1.91 1.98 759.18 5.72 7.72 0.08 0.12 8847360 48 disable disable disable disable 377487360 
+"
+0.0009157132372852199,"{'cb_buffer_size': 100663296.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 37.0, 'setstripe-size': 6815744.0}",32,14.507789864204824,"S3D-IO 100-400-400-4-4-4-1 974.04 1.91 2.01 760.41 5.72 7.71 0.07 0.13 6815744 37 enable enable enable enable 100663296 
+"
+0.0007682554409364702,"{'cb_buffer_size': 407896064.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'enable', 'setstripe-count': 5.0, 'setstripe-size': 24903680.0}",33,15.991842539049685,"S3D-IO 100-400-400-4-4-4-1 1935.97 1.91 1.01 718.82 5.72 8.15 0.07 0.22 24903680 5 disable enable disable disable 407896064 
+"
+0.0017165745277504497,"{'cb_buffer_size': 52428800.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 3.0, 'setstripe-size': 10878976.0}",34,16.90657054167241,"S3D-IO 100-400-400-4-4-4-1 1562.71 1.91 1.25 546.29 5.72 10.73 0.07 0.12 10878976 3 enable enable enable disable 52428800 
+"
+0.0006195381638241257,"{'cb_buffer_size': 492830720.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 5.0, 'setstripe-size': 29425664.0}",35,13.321563053876162,"S3D-IO 100-400-400-4-4-4-1 1180.17 1.91 1.66 852.88 5.72 6.87 0.13 0.19 29425664 5 enable disable enable enable 492830720 
+"
+0.00048647146215860645,"{'cb_buffer_size': 441450496.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 54.0, 'setstripe-size': 30015488.0}",36,12.674086095765233,"S3D-IO 100-400-400-4-4-4-1 907.90 1.91 2.15 1025.70 5.72 5.71 0.09 0.13 30015488 54 disable disable disable enable 441450496 
+"
+0.0014060720454821415,"{'cb_buffer_size': 262144000.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 27.0, 'setstripe-size': 10485760.0}",37,16.15807632729411,"S3D-IO 100-400-400-4-4-4-1 1099.83 1.91 1.78 621.48 5.72 9.43 0.09 0.11 10485760 27 disable disable disable disable 262144000 
+"
+0.0005939534367703275,"{'cb_buffer_size': 387973120.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 14.0, 'setstripe-size': 29949952.0}",38,13.217039388604462,"S3D-IO 100-400-400-4-4-4-1 833.50 1.91 2.34 966.65 5.72 6.06 0.09 0.20 29949952 14 enable disable enable enable 387973120 
+"
+0.0007142939409751745,"{'cb_buffer_size': 125829120.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 21.0, 'setstripe-size': 16777216.0}",39,13.822291361168027,"S3D-IO 100-400-400-4-4-4-1 1086.39 1.91 1.80 820.49 5.72 7.14 0.14 0.04 16777216 21 enable disable enable enable 125829120 
+"
+0.000541719540751122,"{'cb_buffer_size': 197132288.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 6.0, 'setstripe-size': 23724032.0}",40,12.766012242995203,"S3D-IO 100-400-400-4-4-4-1 1384.45 1.91 1.41 869.14 5.72 6.74 0.06 0.14 23724032 6 enable disable enable enable 197132288 
+"

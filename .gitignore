@@ -1,3 +1,6 @@
 progress/active/*.sav
 progress/active/*.save
 progress/S3D-IO/output
+final/active/*.sav
+final/active/*.save
+final/S3D-IO/output

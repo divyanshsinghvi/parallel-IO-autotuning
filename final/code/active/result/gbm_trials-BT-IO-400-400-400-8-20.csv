@@ -1,0 +1,41 @@
+loss,params,iteration,train_time,output
+370012.4625322474,"{'cb_buffer_size': 38797312.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 5.0, 'setstripe-size': 6684672.0}",21,79.26850604079664,"btio-pnetcdf-1.1.1 400-400-400 377.69 2441.41 6.46 38.36 2441.41 63.64 6684672 5 enable disable enable disable 38797312 
+"
+2706.202781850453,"{'cb_buffer_size': 192937984.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'enable', 'setstripe-count': 27.0, 'setstripe-size': 3604480.0}",22,22.87620361149311,"btio-pnetcdf-1.1.1 400-400-400 222.75 2441.41 10.96 921.81 2441.41 2.65 3604480 27 disable enable disable enable 192937984 
+"
+771.356450998889,"{'cb_buffer_size': 128974848.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 10.0, 'setstripe-size': 6619136.0}",23,19.847687249071896,"btio-pnetcdf-1.1.1 400-400-400 385.70 2441.41 6.33 929.61 2441.41 2.63 6619136 10 enable disable enable enable 128974848 
+"
+55759.85167269859,"{'cb_buffer_size': 187695104.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 29.0, 'setstripe-size': 2031616.0}",24,46.37939672823995,"btio-pnetcdf-1.1.1 400-400-400 357.51 2441.41 6.83 80.10 2441.41 30.48 2031616 29 enable disable enable disable 187695104 
+"
+173223.84606240172,"{'cb_buffer_size': 108003328.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 12.0, 'setstripe-size': 10027008.0}",25,63.49484761618078,"btio-pnetcdf-1.1.1 400-400-400 1064.51 2441.41 2.29 46.82 2441.41 52.15 10027008 12 enable enable enable disable 108003328 
+"
+15772122.831303522,"{'cb_buffer_size': 145752064.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'enable', 'setstripe-count': 0.0, 'setstripe-size': 8912896.0}",26,254.3936725575477,"btio-pnetcdf-1.1.1 400-400-400 155.86 2441.41 15.66 10.65 2441.41 229.32 8912896 0 disable enable disable disable 145752064 
+"
+116.41684457970062,"{'cb_buffer_size': 213909504.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 15.0, 'setstripe-size': 9306112.0}",27,14.09734247252345,"btio-pnetcdf-1.1.1 400-400-400 1068.48 2441.41 2.28 983.07 2441.41 2.48 9306112 15 disable disable enable enable 213909504 
+"
+75007.43438895191,"{'cb_buffer_size': 11534336.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 27.0, 'setstripe-size': 3342336.0}",28,50.46070643886924,"btio-pnetcdf-1.1.1 400-400-400 355.07 2441.41 6.88 71.16 2441.41 34.31 3342336 27 enable disable enable disable 11534336 
+"
+8040.900406378673,"{'cb_buffer_size': 239075328.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 1.0, 'setstripe-size': 3211264.0}",29,28.911677130497992,"btio-pnetcdf-1.1.1 400-400-400 155.02 2441.41 15.75 639.87 2441.41 3.82 3211264 1 enable enable disable enable 239075328 
+"
+384.0367993174552,"{'cb_buffer_size': 44040192.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 1.0, 'setstripe-size': 2818048.0}",30,16.018151776865125,"btio-pnetcdf-1.1.1 400-400-400 739.96 2441.41 3.30 642.65 2441.41 3.80 2818048 1 enable disable enable enable 44040192 
+"
+402.49843182082907,"{'cb_buffer_size': 31457280.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 12.0, 'setstripe-size': 5439488.0}",31,16.36368494667113,"btio-pnetcdf-1.1.1 400-400-400 813.14 2441.41 3.00 580.20 2441.41 4.21 5439488 12 disable disable enable enable 31457280 
+"
+129352.69933032827,"{'cb_buffer_size': 232783872.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 13.0, 'setstripe-size': 5701632.0}",32,58.577596372924745,"btio-pnetcdf-1.1.1 400-400-400 231.83 2441.41 10.53 62.83 2441.41 38.86 5701632 13 enable disable disable disable 232783872 
+"
+3235.248092242935,"{'cb_buffer_size': 162529280.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 6.0, 'setstripe-size': 8192000.0}",33,23.731380964629352,"btio-pnetcdf-1.1.1 400-400-400 213.86 2441.41 11.42 806.42 2441.41 3.03 8192000 6 disable disable disable enable 162529280 
+"
+53813.63889901245,"{'cb_buffer_size': 19922944.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 28.0, 'setstripe-size': 10027008.0}",34,46.23842728883028,"btio-pnetcdf-1.1.1 400-400-400 904.31 2441.41 2.70 71.45 2441.41 34.17 10027008 28 enable disable enable disable 19922944 
+"
+2016530.4208127386,"{'cb_buffer_size': 15728640.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 5.0, 'setstripe-size': 4784128.0}",35,132.76983224693686,"btio-pnetcdf-1.1.1 400-400-400 970.61 2441.41 2.52 20.20 2441.41 120.84 4784128 5 enable enable enable disable 15728640 
+"
+35953.550996051694,"{'cb_buffer_size': 184549376.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 13.0, 'setstripe-size': 2555904.0}",36,41.2521457830444,"btio-pnetcdf-1.1.1 400-400-400 923.99 2441.41 2.64 82.51 2441.41 29.59 2555904 13 enable disable enable disable 184549376 
+"
+549498.2652247068,"{'cb_buffer_size': 105906176.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 29.0, 'setstripe-size': 6291456.0}",37,89.0677966075018,"btio-pnetcdf-1.1.1 400-400-400 789.41 2441.41 3.09 31.75 2441.41 76.89 6291456 29 enable enable enable disable 105906176 
+"
+36362.85867348328,"{'cb_buffer_size': 164626432.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 22.0, 'setstripe-size': 5439488.0}",38,41.751508520916104,"btio-pnetcdf-1.1.1 400-400-400 1007.55 2441.41 2.42 81.57 2441.41 29.93 5439488 22 disable disable enable disable 164626432 
+"
+1046.7959645577503,"{'cb_buffer_size': 214958080.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 27.0, 'setstripe-size': 4718592.0}",39,19.46360877621919,"btio-pnetcdf-1.1.1 400-400-400 361.27 2441.41 6.76 773.14 2441.41 3.16 4718592 27 enable disable enable enable 214958080 
+"
+7062655.867922691,"{'cb_buffer_size': 19922944.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 8.0, 'setstripe-size': 3473408.0}",40,197.25539268366992,"btio-pnetcdf-1.1.1 400-400-400 46.52 2441.41 52.48 18.10 2441.41 134.85 3473408 8 enable enable disable disable 19922944 
+"

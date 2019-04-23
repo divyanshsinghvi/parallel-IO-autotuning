@@ -1,0 +1,24 @@
+
+{
+    "mpi" : {
+        "romio_ds_read" : "enable",
+        "romio_ds_write" : "disable"
+    },
+
+    "lfs" : {
+
+         
+            "setstripe" : {
+                "size" : "2m",
+                "count" : "40",
+                "filename" : "."
+        
+            }
+        ,
+        
+            "getstripe" : {
+                "filename" : "."
+            }
+        
+    }
+}
