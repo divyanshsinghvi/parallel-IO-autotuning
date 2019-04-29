@@ -1,0 +1,19 @@
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+/var/spool/PBS/aux/113955.mgmt03
+Read 9 variables from output/out.gio (39760 bytes) in 0.00296116s: 12.8052 MB/s [excluding header read]
+read/write bandwidth : 12.8052
+total read/write amount : 39760
+Time for read/write : 0.00296116
+113955.mgmt03
+generic-IO_2
