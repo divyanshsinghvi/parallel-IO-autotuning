@@ -87,8 +87,8 @@ print(benchmark ,end = " ", file=log)
 print(re.sub(r"\s","-",specific_commands), end = " ")
 print(re.sub(r"\s","-",specific_commands), end = " ", file=log)
 
-print("{0} {1} {2}".format(bandwidth,time,data), end = " ")
-print("{0} {1} {2}".format(bandwidth[-1],time[-1],data[-1]), end = " ",file=log)
+print("{0} {1} {2} {3} {4}".format(write,nodes,bandwidth,time,data), end = " ")
+print("{0} {1} {2} {3} {4}".format(write,nodes,bandwidth[-1],time[-1],data[-1]), end = " ",file=log)
 
 
 

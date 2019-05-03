@@ -12,8 +12,10 @@ do
    # assign name of job
    jobName="${jobPrefix}_${node}"
    echo ${jobName}
-   
-   export mpihints=$3
+   z=$3
+   bar=${z//;/:}
+   export mpihints="*:"$bar"cb_nodes=2"
+   echo "*:"$bar"cb_nodes=2"
    export commnd=$5
    export write=$4
    # run the job
@@ -41,4 +43,3 @@ do
    echo "$out"
    rm "$outfile"
 done
-

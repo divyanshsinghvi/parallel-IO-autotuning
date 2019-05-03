@@ -20,10 +20,11 @@ benchmark = 'S3D-IO'
 specific_commands="50 50 100 2 2 4 1"
 nodes = "2"
 ppn = "8"
+system=""
 try:
-    opts, args = getopt.getopt(sys.argv[1:],"h:b:o:f:c:n:p:",["benchmark=","outputFolder=","benchmarkFolder=", "specificCommands=","nodes=","ppn="])
+    opts, args = getopt.getopt(sys.argv[1:],"h:b:o:f:c:n:p:s:",["benchmark=","outputFolder=","benchmarkFolder=", "specificCommands=","nodes=","ppn=","system="])
 except getopt.GetoptError:
-    print('read_config_general.py -b <benchmark> -o <outputFolder> -f <benchmarkFolder> -c <specificCommands> -n <nodes> -p <ppn>')
+    print('read_config_general.py -b <benchmark> -o <outputFolder> -f <benchmarkFolder> -c <specificCommands> -n <nodes> -p <ppn> -s <system>')
     sys.exit(2)
 for opt, arg in opts:
     if opt == '-h':
@@ -41,10 +42,12 @@ for opt, arg in opts:
         nodes = arg
     elif opt in ("-p", "--ppn"):
         ppn = str(arg)
+    elif opt in ("-s", "--system"):
+        system = arg
 #print(benchmark + specific_commands + str(nodes) + str(ppn))
 os.chdir(benchmarkFolder)
 #out=subprocess.Popen(["lfs", "getstripe","-d", "."], shell=False, stdout=subprocess.PIPE) 
-
+benchmark = system+benchmark
 for key in data["lfs"]:
     command = "lfs " + key + "  "
     d =  data["lfs"][key]

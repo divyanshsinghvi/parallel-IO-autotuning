@@ -1,3 +1,43 @@
+from pprint import pprint
+import re
+import os
+import sys, getopt
+
+MAX_EVALS = 2
+system=""
+plotdirectory = "./plots"
+file_suffix = "S3D-IO-200-200-400-2-2-4-1" 
+project_dir = "/home/meghaagr/project/progress/"
+nodes="-n2"
+configuration="-c200 200 400 2 2 4 1"
+ppn="-p8"
+benchmark="read_config_general.py"
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:],"h:b:f:c:n:p:s:u:",["benchmark=","project_dir=","configuration=","nodes=","ppn=","system=","file_suffix="])
+except getopt.GetoptError:
+    print('-b <benchmark> -f <project_dir> -c <configuration> -n <nodes> -p <ppn> -s <system>')
+    sys.exit(2)
+for opt, arg in opts:
+    if opt == '-h':
+        print(' -b <benchmark> -f <project_dir> -c <configuration> -n <nodes> -p <ppn> -s <system>')
+        sys.exit()
+    elif opt in ("-b", "--benchmark"):
+        benchmark = arg
+    elif opt in ("-f", "--project_dir"):
+        project_dir = arg
+    elif opt in ("-c", "--configuration"):
+        configuration = arg
+    elif opt in ("-n", "--nodes"):
+        nodes = arg
+    elif opt in ("-p", "--ppn"):
+        ppn = arg
+    elif opt in ("-s", "--system"):
+        system = arg
+    elif opt in ("-u", "--file_suffix"):
+        file_suffix = arg
+file_suffix+=str(MAX_EVALS)
+
 import pandas as pd
 import numpy as np
 # Evaluation of the model
@@ -8,7 +48,6 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
-MAX_EVALS = 2
 import csv
 from hyperopt import STATUS_OK
 from timeit import default_timer as timer
@@ -16,22 +55,14 @@ import json
 import shlex
 import subprocess
 import logging
-from pprint import pprint
-import re
-import os
 
-plotdirectory = "./plots"
-file_suffix = "S3D-IO-200-200-400-2-2-4-1" + str(MAX_EVALS)
-project_dir = "/home/meghaagr/project/progress/"
-nodes='8'
-configuration="-c200 200 400 2 2 4 1"
-ppn='8'
+
 print("Loading done")
 def runthebenchmark(hyperparameters):
     os.chdir(project_dir+'active/../')
     storeinfile(hyperparameters)
     print("Running the benchmark")
-    out=subprocess.Popen(["python3","read_config_general.py",nodes,ppn,configuration], shell=False, stdout=subprocess.PIPE)
+    out=subprocess.Popen(["python3",benchmark,nodes,ppn,configuration,system], shell=False, stdout=subprocess.PIPE)
     logging.basicConfig(level=logging.DEBUG)
     output=out.stdout.read().decode('utf-8')
     print("output"+output)
@@ -87,7 +118,7 @@ space = {
     'romio_cb_write' : hp.choice('romio_cb_write',['enable','disable']),
     'cb_buffer_size' : 1048576*hp.quniform('cb_buffer_size',1,512,1),
     'setstripe-size' : 65536*(hp.quniform('setstripe-size',0,512,1)),
-    'setstripe-count' : hp.qloguniform('setstripe-count',0,5,1)
+    'setstripe-count' : hp.quniform('setstripe-count',1,24,1)
     
 }
 
@@ -279,4 +310,4 @@ plt.legend()
 plt.xlabel('romio_cb_read'); plt.ylabel('Count'); plt.title('romio_cb_read Distribution');
 plt.savefig(file_suffix+'_romio_cb_read.png')
 
-
+print("Plots are saved in plots directory with prefix "+file_suffix )

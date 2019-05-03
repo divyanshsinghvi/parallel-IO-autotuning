@@ -92,8 +92,28 @@ void GenericFileIO_MPI::open(const std::string &FN, bool ForReading) {
                     MPI_INFO_NULL, &FH) != MPI_SUCCESS)
     throw runtime_error((!ForReading ? "Unable to create the file: " :
                                        "Unable to open the file: ") +
-                        FileName);
+        
+                FileName);
+	int rank;
+	MPI_Comm_rank(Comm,&rank);	
+	if(rank==0){
+		MPI_Info info;  
+		MPI_File_get_info(FH, &info);
+		int nkeys,i,flag;
+		int valuelen;
+		MPI_Info_get_nkeys( info, &nkeys );
+		for(i=0;i<nkeys;i++){
+			char key[20];
+			char value[20];
+			MPI_Info_get_nthkey(info,i,key);
+			MPI_Info_get_valuelen( info, key, &valuelen, &flag );
+			MPI_Info_get(info, key, valuelen, value, &flag);
+			std::cout << key <<" "<<value<<endl;
+	
+		}
+	}	
 }
+
 
 void GenericFileIO_MPI::setSize(size_t sz) {
   if (MPI_File_set_size(FH, sz) != MPI_SUCCESS)

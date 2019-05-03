@@ -15,11 +15,8 @@ echo $PBS_NODEFILE
 #sort hostnames
 sort $PBS_NODEFILE > hostfile
 #run the job on required number of cores
-#mpirun -machinefile hostfile ./mpi/GenericIOBenchmarkWrite output/out.gio $commnd
-echo $path
-echo $commnd
-#export MPICH_MPIIO_HINTS=$mpihints
-mpirun -machinefile hostfile -env ROMIO_HINTS=$romhint $path output/out.gio $commnd
+mpirun -machinefile hostfile -env PNETCDF_HINTS=$mpihints ./s3d_io.x $commnd T output/
+
 echo $PBS_JOBID
 echo $PBS_JOBNAME
 
