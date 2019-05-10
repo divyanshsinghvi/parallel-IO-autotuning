@@ -1,0 +1,41 @@
+loss,params,iteration,train_time,output
+1335.4095025070853,"{'cb_buffer_size': 501219328.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 14.0, 'setstripe-size': 30867456.0}",21,72.92656623758376,"Generic-IO 1073741824-2 0 4 1464.98 26.5634 40805156194 1074.65 36.2115 40805143874 30867456 14 disable disable disable enable 501219328 
+"
+1335.2581668893085,"{'cb_buffer_size': 209715200.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 7.0, 'setstripe-size': 29818880.0}",22,77.82916527241468,"Generic-IO 1073741824-2 0 4 1237.28 31.4518 40805153498 1069.72 36.3784 40805143874 29818880 7 enable disable disable enable 209715200 
+"
+1297.903950633327,"{'cb_buffer_size': 350224384.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 19.0, 'setstripe-size': 20840448.0}",23,77.8239451693371,"Generic-IO 1073741824-2 0 4 1259.14 30.906 40805153498 1059.9 36.7156 40805143874 20840448 19 disable disable enable enable 350224384 
+"
+918.7107540704269,"{'cb_buffer_size': 328204288.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 8.0, 'setstripe-size': 19529728.0}",24,81.39477786514908,"Generic-IO 1073741824-2 0 4 1283.2 30.3263 40805153498 941.808 41.3193 40805143874 19529728 8 disable disable disable enable 328204288 
+"
+1345.6050409988823,"{'cb_buffer_size': 362807296.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 6.0, 'setstripe-size': 6356992.0}",25,74.52060084976256,"Generic-IO 1073741824-2 0 4 1387.89 28.0388 40805156194 1075.97 36.1673 40805143874 6356992 6 disable disable disable enable 362807296 
+"
+922.5727876837118,"{'cb_buffer_size': 216006656.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 6.0, 'setstripe-size': 13762560.0}",26,86.82062800135463,"Generic-IO 1073741824-2 0 4 1117.77 34.8146 40805153498 938.68 41.457 40805143874 13762560 6 disable disable disable disable 216006656 
+"
+1041.6341974860811,"{'cb_buffer_size': 126877696.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'enable', 'setstripe-count': 19.0, 'setstripe-size': 20840448.0}",27,76.75597047340125,"Generic-IO 1073741824-2 0 4 1431.02 27.1938 40805156194 986.496 39.4475 40805143874 20840448 19 disable enable enable enable 126877696 
+"
+1029.1801128051602,"{'cb_buffer_size': 416284672.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 7.0, 'setstripe-size': 1310720.0}",28,78.1829554317519,"Generic-IO 1073741824-2 0 4 1354.1 28.7386 40805153498 980.895 39.6728 40805143874 1310720 7 enable disable disable disable 416284672 
+"
+1122.171668947565,"{'cb_buffer_size': 2097152.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 17.0, 'setstripe-size': 1835008.0}",29,82.71469567343593,"Generic-IO 1073741824-2 0 4 1142.89 34.0496 40805156194 1005.12 38.7167 40805143874 1835008 17 enable disable enable disable 2097152 
+"
+1516.6808496012316,"{'cb_buffer_size': 70254592.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 20.0, 'setstripe-size': 12124160.0}",30,82.84569644462317,"Generic-IO 1073741824-2 0 4 0.113539 37.8919 40805153498 1111.05 35.0254 40805143874 12124160 20 enable disable enable disable 70254592 
+"
+1197.4952679063351,"{'cb_buffer_size': 519045120.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 11.0, 'setstripe-size': 21168128.0}",31,83.4242633394897,"Generic-IO 1073741824-2 0 4 1097.78 35.4487 40805156194 1026.47 37.9112 40805143874 21168128 11 enable disable enable enable 519045120 
+"
+1139.6872887978247,"{'cb_buffer_size': 429916160.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 12.0, 'setstripe-size': 11730944.0}",32,76.26997234113514,"Generic-IO 1073741824-2 0 4 1388.9 28.0184 40805156194 1016.53 38.2822 40805143874 11730944 12 enable enable enable enable 429916160 
+"
+1254.8051581614857,"{'cb_buffer_size': 108003328.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 6.0, 'setstripe-size': 11010048.0}",33,72.99439272098243,"Generic-IO 1073741824-2 0 4 1503.9 25.8759 40805156194 1052.72 36.9661 40805143874 11010048 6 enable enable disable disable 108003328 
+"
+1345.6902393935504,"{'cb_buffer_size': 532676608.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 16.0, 'setstripe-size': 3538944.0}",34,79.13637041579932,"Generic-IO 1073741824-2 0 4 1180.95 32.9521 40805153498 1071.08 36.3325 40805143874 3538944 16 enable disable disable enable 532676608 
+"
+720.1459345124343,"{'cb_buffer_size': 370147328.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'disable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 18.0, 'setstripe-size': 6094848.0}",35,97.43913637008518,"Generic-IO 1073741824-2 0 4 927.373 41.9625 40805156194 854.379 45.5475 40805143874 6094848 18 enable enable enable disable 370147328 
+"
+1344.3636733930568,"{'cb_buffer_size': 115343360.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'enable', 'setstripe-count': 18.0, 'setstripe-size': 26804224.0}",36,76.44538804702461,"Generic-IO 1073741824-2 0 4 1289.46 30.1792 40805156194 1073.49 36.2508 40805143874 26804224 18 enable enable enable enable 115343360 
+"
+822.0539356966417,"{'cb_buffer_size': 513802240.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 11.0, 'setstripe-size': 26607616.0}",37,86.45359933096915,"Generic-IO 1073741824-2 0 4 1167.35 33.336 40805156194 903.435 43.0743 40805143874 26607616 11 disable disable enable enable 513802240 
+"
+1577.3497485434943,"{'cb_buffer_size': 406847488.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 18.0, 'setstripe-size': 31653888.0}",38,76.54022746346891,"Generic-IO 1073741824-2 0 4 1202.87 32.3517 40805153498 1131.71 34.3859 40805143874 31653888 18 enable disable disable enable 406847488 
+"
+1506.4734435049472,"{'cb_buffer_size': 176160768.0, 'romio_cb_read': 'disable', 'romio_cb_write': 'enable', 'romio_ds_read': 'disable', 'romio_ds_write': 'disable', 'setstripe-count': 14.0, 'setstripe-size': 13631488.0}",39,71.78156702406704,"Generic-IO 1073741824-2 0 4 1441.36 26.9986 40805156194 1119.36 34.7651 40805143874 13631488 14 disable disable disable enable 176160768 
+"
+1502.0166100388115,"{'cb_buffer_size': 256901120.0, 'romio_cb_read': 'enable', 'romio_cb_write': 'enable', 'romio_ds_read': 'enable', 'romio_ds_write': 'disable', 'setstripe-count': 19.0, 'setstripe-size': 29097984.0}",40,72.69461533613503,"Generic-IO 1073741824-2 0 4 1392.95 27.937 40805156194 1117.29 34.8297 40805143874 29097984 19 enable disable enable enable 256901120 
+"
